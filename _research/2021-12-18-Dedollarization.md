@@ -1,14 +1,15 @@
 ---
 
-title: "Algorithmic Assortative Matching on a Digital Social Medium"
+title: "Policies for Transactional De-Dollarization: Theory and Experiment"
 
 collection: research
 
-permalink: /research/2021-10-08-Assortative
+permalink: /research/2021-12-18-Dedollarization
+
 
 excerpt: ''
 
-date: 2021-10-08
+date: 2021-12-18
 
 venue: 'Conditionally Accepted at Information Systems Research'
 
