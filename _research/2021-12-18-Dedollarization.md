@@ -13,7 +13,7 @@ date: 2021-12-18
 
 venue: 'Conditionally Accepted at Information Systems Research'
 
-paperurl: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3972913'
+paperurl: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606014'
 
 citation: 'Lopez Vargas, K., Runge, J., Zhang, R. (2021). &quot;Algorithmic Assortative Matching on a Digital Social Medium.&quot; <i>Working Paper</i>.'
 
