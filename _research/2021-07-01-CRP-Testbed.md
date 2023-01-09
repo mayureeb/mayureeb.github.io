@@ -4,17 +4,17 @@ title: "Improving the Cost-Effectiveness of the Conservation Reserve Program: A 
 
 collection: research
 
-permalink: /research/2019-01-01-CRP-Testbed
+permalink: /research/2021-07-01-CRP-Testbed
 
 excerpt: ''
 
-date: 2021-02-23
+date: 2021-07-01
 
-venue: 'Forthcoming at Journal of Environmental Economics and Management'
+venue: 'Journal of Environmental Economics and Management'
 
-paperurl: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3164730'
+paperurl: 'https://doi.org/10.1016/j.jeem.2021.102439'
 
-citation: 'Cramton, P., Hellerstein, D., Higgins, N., Iovanna, R., Lopez Vargas, K., and Wallander, S. (2019). &quot;Improving the Cost-Effectiveness of the Conservation Reserve Program: A Laboratory Study.&quot; <i>Working Paper</i>.'
+citation: 'Cramton, P., Hellerstein, D., Higgins, N., Iovanna, R., Lopez Vargas, K., and Wallander, S. (2021). &quot;Improving the Cost-Effectiveness of the Conservation Reserve Program: A Laboratory Study.&quot; <i>Journal of Environmental Economics and Management</i>. 108, 102439.'
 
 ---
 The Conservation Reserve Program (CRP) is arguably the world’s largest conservation
@@ -32,8 +32,6 @@ submit offers that are competitive against low-cost sellers, hurting both effici
 cost-effectiveness. The endogenous reference price outperforms the exogenous reference
 price in terms of cost-effectiveness by increasing participation and reducing rents.
 
-R&R2 at Journal of Environmental Economics and Management 
+[Download](https://doi.org/10.1016/j.jeem.2021.102439)
 
-[Download](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3164730)
-
-Recommended citation: Cramton, P., Hellerstein, D., Higgins, N., Iovanna, R., López-Vargas, K. and Wallander, S. (2019). &quot;Improving the Cost-Effectiveness of the Conservation Reserve Program: A Laboratory Study.&quot; <i>Working Paper</i>.
+Recommended citation: Cramton, P., Hellerstein, D., Higgins, N., Iovanna, R., Lopez Vargas, K., and Wallander, S. (2021). &quot;Improving the Cost-Effectiveness of the Conservation Reserve Program: A Laboratory Study.&quot; <i>Journal of Environmental Economics and Management</i>. 108, 102439.
