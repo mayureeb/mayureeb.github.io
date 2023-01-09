@@ -1,25 +1,25 @@
 ---
 
-title: "Messenger and Spillovers Effects on Infant Immunization: A Field Experiment"
+title: "Separation of Powers and Electoral Rules: A Laboratory Study of Presidential Democracies"
 
 collection: research
 
-permalink: /research/2022-11-01-VaccinesRD
+permalink: /research/2023-01-09-Elections
 
 
 excerpt: ''
 
-date: 2022-11-01
+date: 2023-01-09
 
 venue: ''
 
-paperurl: 'https://ssrn.com/abstract=4312978'
+paperurl: ''
 
-citation: 'Lopez Vargas, K., Parodi, S., Ramirez, I., and Villa-Paro, P. (2022). &quot;Messenger and Spillovers Effects on Infant Immunization: A Field Experiment.&quot; <i>Working Paper</i>.'
+citation: 'Lopez Vargas, K., Medina, S., and Moromizato, G. (2023). &quot;Separation of Powers and Electoral Rules: A Laboratory Study of Presidential Democracies.&quot; <i>Working Paper</i>.'
 
 ---
-We study the messenger and spillover effects of an information campaign about infant immunization. These are two crucial yet little-understood aspects of policies aiming at behavioral change. We conducted a large field experiment in urban areas of the Dominican Republic where treated households received weekly voice messages providing information and encouragement for infant immunization. We implemented three conditions delivered via voice calls. One group received messages from a generic radio host (RH); the second group received the same messages from the country's vice president (VP) and the control group. Our design allows us to study the spillover effects of these interventions. We find that receiving either type of message increases the number of administered vaccines and improves immunization timeliness. Notably, only the VP messages have spillover effects among untreated households. When surrounded by more VP-treated households, control households improve in all outcomes. RH treatment shows no spillover effects. We conduct a simulation exercise to predict the overall gain of scaling up such policies. We find that a campaign based on VP messages is more effective than the RH alternative. A campaign where 10% of the target population receives messages from a well-regarded public figure generates an increment of vaccine doses of over 25% in the population. 
+Over one-third of the countries worldwide are presidential democracies, and, in the last half-century, many of these countries are moving from electing their president with plurality rules to using runoff systems. Importantly, major questions on the functioning of the core institutions of these democracies remain open. We study theoretically and empirically two institutions: (i) the electoral rule for choosing the president (plurality versus runoff); and (ii) the separation of powers modeled as a Congress that can veto the president's proposed budget allocations. We present a model of a presidential system with heterogeneous citizens and politicians participating in an election process and a public-budget allocation.The model predicts that separation of powers may promote a more egalitarian budget allocation through alliances at the election stage or bargaining in the elected congress. The run-off system increases the opportunity of the second largest electoral group to win the presidency. We deployed a laboratory experiment to study this setting empirically. We find that the existence of Congress does not exhibit an average impact on electoral results, budget allocations, or welfare. Nonetheless, Congress does help to increase the budget allocated to policies that favor the opposition when the president won a fragmented election. This shows that Congress might work as insurance for the opposition. Moreover, majority runoff electoral rule (as opposed to plurality) affects election and administrative results only when there is a Congress. The probability of the most popular candidate being elected decreases, which shifts the budget away from the policy of his preference. In turn, this increases inequality and reduces welfare. 
 
-[Download](https://ssrn.com/abstract=4312978)
+[Download]()
 
-Recommended citation: Lopez Vargas, K., Parodi, S., Ramirez, I., and Villa-Paro, P. (2022). &quot;Messenger and Spillovers Effects on Infant Immunization: A Field Experiment.&quot; <i>Working Paper</i>.
+Recommended citation: 'Lopez Vargas, K., Medina, S., and Moromizato, G. (2023). &quot;Separation of Powers and Electoral Rules: A Laboratory Study of Presidential Democracies.&quot; <i>Working Paper</i>.'
