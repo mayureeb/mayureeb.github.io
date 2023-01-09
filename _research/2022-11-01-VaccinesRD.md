@@ -22,4 +22,4 @@ We study the messenger and spillover effects of an information campaign about in
 
 [Download](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4312978)
 
-Recommended citation: 'Lopez Vargas, K., Parodi, S., Ramirez, I., and Villa-Paro, P. (2022). &quot;Messenger and Spillovers Effects on Infant Immunization: A Field Experiment.&quot; <i>Working Paper</i>.'
+Recommended citation: Lopez Vargas, K., Parodi, S., Ramirez, I., and Villa-Paro, P. (2022). &quot;Messenger and Spillovers Effects on Infant Immunization: A Field Experiment.&quot; <i>Working Paper</i>.
