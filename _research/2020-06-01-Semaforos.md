@@ -15,7 +15,7 @@ venue: ''
 
 paperurl: ''
 
-citation: 'Lopez Vargas, K., Rossi, A., and Zhang, R. (2020). &quot;The Impact of Observing Peers&#39; Giving Behavior: A Field Study.&quot; <i>Working Paper</i>.'
+citation: 'López Vargas, K., Rossi, A. & Zhang, R. (2020). &quot;The Impact of Observing Peers&#39; Giving Behavior: A Field Study.&quot; <i>Working Paper</i>.'
 
 ---
 Our paper studies the impact of peer's giving behavior on people's willingness to donate. We implement a field experiment on donations to street performers at stoplights on the streets of Lima, Perú. The level of analysis is the vehicle and the treatment condition is defined as observing another vehicle making a donation.
@@ -23,4 +23,4 @@ We use natural variation in donations made by passing-by drivers, as well as exp
 
 [Download]()
 
-Recommended citation: Lopez Vargas, K., Rossi, A., and Zhang, R. (2020). &quot;The Impact of Observing Peers&#39; Giving Behavior: A Field Study.&quot; <i>Working Paper</i>.
+Recommended citation: López Vargas, K., Rossi, A. & Zhang, R. (2020). &quot;The Impact of Observing Peers&#39; Giving Behavior: A Field Study.&quot; <i>Working Paper</i>.
