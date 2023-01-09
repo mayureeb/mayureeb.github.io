@@ -23,4 +23,4 @@ I study theoretically and empirically the interaction between risk attitudes and
 
 [Download](http://econweb.umd.edu/~lopez-vargas/LopezVargas_JMP_2014.pdf)
 
-Recommended citation: López Vargas, K. (2014). "Risk Attitudes and Fairness: Theory and Experiment." <i>Job Market Paper</i>.
+Recommended citation: Lopez-Vargas, K. (2014). "Risk Attitudes and Fairness: Theory and Experiment." <i>Job Market Paper</i>.
