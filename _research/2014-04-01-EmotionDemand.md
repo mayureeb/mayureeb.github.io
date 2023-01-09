@@ -13,7 +13,7 @@ venue: 'R&R from AER'
 
 paperurl: 'http://econweb.umd.edu/~lopez-vargas/Grosskopf_LopezVargas_2014.pdf'
 
-citation: 'Grosskopf, B. and López Vargas, K. (2014). &quot;On the Demand for Expressing Emotions.&quot; <i>Working Paper</i>.'
+citation: 'Grosskopf, B. & López Vargas, K. (2014). &quot;On the Demand for Expressing Emotions.&quot; <i>Working Paper</i>.'
 
 ---
 
@@ -23,4 +23,4 @@ R&R from AER
 
 [Download](http://econweb.umd.edu/~lopez-vargas/Grosskopf_LopezVargas_2014.pdf)
 
-Recommended citation: Grosskopf, B. and López Vargas, K. (2014). &quot;On the Demand for Expressing Emotions.&quot; <i>Working Paper</i>.
+Recommended citation: Grosskopf, B. & López Vargas, K. (2014). &quot;On the Demand for Expressing Emotions.&quot; <i>Working Paper</i>.
