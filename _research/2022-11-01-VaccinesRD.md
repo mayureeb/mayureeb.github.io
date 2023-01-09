@@ -1,25 +1,25 @@
 ---
 
-title: "Policies for Transactional De-Dollarization: Theory and Experiment"
+title: "Messenger and Spillovers Effects on Infant Immunization: A Field Experiment"
 
 collection: research
 
-permalink: /research/2021-12-18-Dedollarization
+permalink: /research/2022-11-01-VaccinesRD
 
 
 excerpt: ''
 
-date: 2021-12-18
+date: 2022-11-01
 
-venue: 'Journal of Economic Behavior and Organization'
+venue: ''
 
-paperurl: 'https://doi.org/10.1016/j.jebo.2022.05.012'
+paperurl: '[https://doi.org/10.1016/j.jebo.2022.05.012](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4312978)'
 
-citation: 'Arrieta, J., Florian, D., Lopez Vargas, K, and Morales, V. (2021). &quot;Policies for Transactional De-Dollarization: A Laboratory Study.&quot; <i>Journal of Economic Behavior & Organization</i>. Vol 200, 2022, pp 31-54, ISSN 0167-2681, https://doi.org/10.1016/j.jebo.2022.05.012.'
+citation: 'Lopez Vargas, K., Parodi, S., Ramirez, I., and Villa-Paro, P. (2022). &quot;Messenger and Spillovers Effects on Infant Immunization: A Field Experiment.&quot; <i>Working Paper</i>.'
 
 ---
-Partial currency substitution typically occurs in small open economies amid economic crises. The local currency loses some of its essential functions, and a foreign currency, usually the US Dollar, becomes widely adopted. Interestingly, the coexistence of the two currencies often persists even after macroeconomic stability returns. This persistence imposes challenges to the conduct of monetary policy. Central banks have responded by applying de-dollarization policies. We extend the model in Matsuyama et al. (1993) and implement an experiment to study the effectiveness of two de-dollarization interventions: (1) taxes on transactions in foreign currency among domestic agents and (2) a reduction in the storage costs of local currency. We contribute to the theoretical literature by characterizing a new circulation regime for small open economies where agents use the foreign currency (FC) solely for international trade purposes and settle domestic transactions exclusively in local currency. Our experimental evidence suggests that taxes (treatment 1) and storage cost (treatment 2) can foster de-dollarization as they reduce foreign currency acceptance and reinforce the use of local currency. However, we find that the impact of a reduction in the storage costs of local currency is more significant and more robust. They lower the acceptance rate of FC by more than 20% and increased the acceptance of LC by more than 30%. The tax policy only reduced foreign currency acceptance by a smaller amount and only for encounters with foreign agents.
+We study the messenger and spillover effects of an information campaign about infant immunization. These are two crucial yet little-understood aspects of policies aiming at behavioral change. We conducted a large field experiment in urban areas of the Dominican Republic where treated households received weekly voice messages providing information and encouragement for infant immunization. We implemented three conditions delivered via voice calls. One group received messages from a generic radio host (RH); the second group received the same messages from the country's vice president (VP) and the control group. Our design allows us to study the spillover effects of these interventions. We find that receiving either type of message increases the number of administered vaccines and improves immunization timeliness. Notably, only the VP messages have spillover effects among untreated households. When surrounded by more VP-treated households, control households improve in all outcomes. RH treatment shows no spillover effects. We conduct a simulation exercise to predict the overall gain of scaling up such policies. We find that a campaign based on VP messages is more effective than the RH alternative. A campaign where 10% of the target population receives messages from a well-regarded public figure generates an increment of vaccine doses of over 25% in the population. 
 
-[Download](https://doi.org/10.1016/j.jebo.2022.05.012)
+[Download][(https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4312978)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4312978)
 
-Recommended citation: 'Arrieta, J., Florian, D., Lopez Vargas, K, and Morales, V. (2021). &quot;Policies for Transactional De-Dollarization: A Laboratory Study.&quot; <i>Journal of Economic Behavior & Organization</i>. Vol 200, 2022, pp 31-54, ISSN 0167-2681, https://doi.org/10.1016/j.jebo.2022.05.012.'
+Recommended citation: 'Lopez Vargas, K., Parodi, S., Ramirez, I., and Villa-Paro, P. (2022). &quot;Messenger and Spillovers Effects on Infant Immunization: A Field Experiment.&quot; <i>Working Paper</i>.'
