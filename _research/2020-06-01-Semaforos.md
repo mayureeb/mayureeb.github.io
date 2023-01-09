@@ -1,6 +1,6 @@
 ---
 
-title: "The Impact of Observing Peers' Giving Behavior: A Field Study"
+title: "Separation of Powers and Electoral Rules: A Laboratory Study of Presidential Democracies"
 
 collection: research
 
@@ -15,15 +15,11 @@ venue: ''
 
 paperurl: ''
 
-citation: 'Lopez Vargas, K., Rossi, A., and Zhang, R. (2020). &quot;The Impact of Observing Peers' Giving Behavior: A Field Study.&quot; <i>Working Paper</i>.'
+citation: 'Lopez Vargas, K., Medina, S., and Moromizato, G. (2023). &quot;Separation of Powers and Electoral Rules: A Laboratory Study of Presidential Democracies.&quot; <i>Working Paper</i>.'
 
 ---
+Over one-third of the countries worldwide are presidential democracies, and, in the last half-century, many of these countries are moving from electing their president with plurality rules to using runoff systems. Importantly, major questions on the functioning of the core institutions of these democracies remain open. We study theoretically and empirically two institutions: (i) the electoral rule for choosing the president (plurality versus runoff); and (ii) the separation of powers modeled as a Congress that can veto the president's proposed budget allocations. We present a model of a presidential system with heterogeneous citizens and politicians participating in an election process and a public-budget allocation.The model predicts that separation of powers may promote a more egalitarian budget allocation through alliances at the election stage or bargaining in the elected congress. The run-off system increases the opportunity of the second largest electoral group to win the presidency. We deployed a laboratory experiment to study this setting empirically. We find that the existence of Congress does not exhibit an average impact on electoral results, budget allocations, or welfare. Nonetheless, Congress does help to increase the budget allocated to policies that favor the opposition when the president won a fragmented election. This shows that Congress might work as insurance for the opposition. Moreover, majority runoff electoral rule (as opposed to plurality) affects election and administrative results only when there is a Congress. The probability of the most popular candidate being elected decreases, which shifts the budget away from the policy of his preference. In turn, this increases inequality and reduces welfare. 
 
-Our paper studies the impact of peer's giving behavior on people's willingness to donate. We implement a field experiment on donations to street performers at stoplights on the streets of Lima, Perú. 
-The level of analysis is the vehicle and the treatment condition is defined as observing another vehicle making a donation.
-We use natural variation in donations made by passing-by drivers, as well as experimentally-manipulated variation in donations made by hired drivers. We study how observing a donation from another vehicle affects the probability and magnitude of donations of treated vehicles. 
-Our experiment results indicate a strong substitution effect of peer influence. When drivers observe another vehicle donate, they are significantly less likely to make a donation to the same performer and overall average donations are lower as well. Our study contributes to the literature by bringing evidence of peer influence in donations from the developing world.
+[Download]()
 
-[Download](https://drive.google.com/file/d/15dxqXflVxRSDLo2mXjsOQye12ijGEMBD/view?usp=sharing)
-
-Recommended citation: Lopez Vargas, K., Rossi, A., and Zhang, R. (2020). &quot;The Impact of Observing Peers' Giving Behavior: A Field Study.&quot; <i>Working Paper</i>.
+Recommended citation: 'Lopez Vargas, K., Medina, S., and Moromizato, G. (2023). &quot;Separation of Powers and Electoral Rules: A Laboratory Study of Presidential Democracies.&quot; <i>Working Paper</i>.'
