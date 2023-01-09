@@ -13,13 +13,13 @@ date: 2022-12-24
 
 venue: ''
 
-paperurl: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4312978'
+paperurl: 'https://ssrn.com/abstract=4311583'
 
-citation: 'Lopez Vargas, K., Parodi, S., Ramirez, I., and Villa-Paro, P. (2022). &quot;Messenger and Spillovers Effects on Infant Immunization: A Field Experiment.&quot; <i>Working Paper</i>.'
+citation: 'Fuhrmann-Riebel, H., D’Exelle, B., Lopez Vargas, K., Tonke, S., and Verschoor, A. (2022). &quot;Misperceived Trends and Norms: A Field Experiment to Address Weak Collective Action.&quot; <i>Working Paper</i>.'
 
 ---
-We study the messenger and spillover effects of an information campaign about infant immunization. These are two crucial yet little-understood aspects of policies aiming at behavioral change. We conducted a large field experiment in urban areas of the Dominican Republic where treated households received weekly voice messages providing information and encouragement for infant immunization. We implemented three conditions delivered via voice calls. One group received messages from a generic radio host (RH); the second group received the same messages from the country's vice president (VP) and the control group. Our design allows us to study the spillover effects of these interventions. We find that receiving either type of message increases the number of administered vaccines and improves immunization timeliness. Notably, only the VP messages have spillover effects among untreated households. When surrounded by more VP-treated households, control households improve in all outcomes. RH treatment shows no spillover effects. We conduct a simulation exercise to predict the overall gain of scaling up such policies. We find that a campaign based on VP messages is more effective than the RH alternative. A campaign where 10% of the target population receives messages from a well-regarded public figure generates an increment of vaccine doses of over 25% in the population. 
+We study how correcting people’s beliefs about social norms and behavioral trends encourages collective action in a setting where the desired behavior is not yet prevalent. In a field experiment among 1,709 subjects, we test whether low sign-up rates for a recycling program in urban Peru can be increased by providing information that (1) most people regard participation in the program as important, i.e., the “injunctive norm,” (2) an increasing recent trend in sign-up rates. Correcting inaccurate beliefs increases sign-up decisions significantly among people who underestimate either the injunctive norm or the positive trend. Our paper addresses the important and little-understood question of how to stimulate collective action where it is currently weak.
 
-[Download](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4312978)
+[Download](https://ssrn.com/abstract=4311583)
 
-Recommended citation: Lopez Vargas, K., Parodi, S., Ramirez, I., and Villa-Paro, P. (2022). &quot;Messenger and Spillovers Effects on Infant Immunization: A Field Experiment.&quot; <i>Working Paper</i>.
+Recommended citation: Fuhrmann-Riebel, H., D’Exelle, B., Lopez Vargas, K., Tonke, S., and Verschoor, A. (2022). &quot;Misperceived Trends and Norms: A Field Experiment to Address Weak Collective Action.&quot; <i>Working Paper</i>.
