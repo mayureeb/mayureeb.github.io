@@ -1,6 +1,6 @@
 ---
 
-title: "Separation of Powers and Electoral Rules: A Laboratory Study of Presidential Democracies"
+title: "The Impact of Observing Peers' Giving Behavior: A Field Study"
 
 collection: research
 
