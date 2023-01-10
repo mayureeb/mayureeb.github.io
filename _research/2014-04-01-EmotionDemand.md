@@ -11,7 +11,7 @@ date: 2014-04-21
 
 venue: 'R&R from AER'
 
-paperurl: 'http://econweb.umd.edu/~lopez-vargas/Grosskopf_LopezVargas_2014.pdf'
+paperurl: ''
 
 citation: 'Grosskopf, B. & López Vargas, K. (2014). &quot;On the Demand for Expressing Emotions.&quot; <i>Working Paper</i>.'
 
@@ -21,6 +21,6 @@ People communicate in economic interactions either aiming to alter material outc
 
 R&R from AER
 
-[Download](http://econweb.umd.edu/~lopez-vargas/Grosskopf_LopezVargas_2014.pdf)
+[Download]()
 
 Recommended citation: Grosskopf, B. & López Vargas, K. (2014). &quot;On the Demand for Expressing Emotions.&quot; <i>Working Paper</i>.
