@@ -14,7 +14,7 @@ venue: 'Journal of Environmental Economics and Management'
 
 paperurl: 'https://doi.org/10.1016/j.jeem.2021.102439'
 
-citation: 'Cramton, P., Hellerstein, D., Higgins, N., Iovanna, R., López Vargas, K. & Wallander, S. (2021). &quot;Improving the Cost-Effectiveness of the Conservation Reserve Program: A Laboratory Study.&quot; <i>Journal of Environmental Economics and Management</i>. 108, 102439.'
+citation: 'Cramton, P., Hellerstein, D., Higgins, N., Iovanna, R., López Vargas, K. & Wallander, S. (2021). &quot;Improving the Cost-Effectiveness of the Conservation Reserve Program: A Laboratory Study.&quot; <i>Journal of Environmental Economics and Management</i>, 108, 102439.'
 
 ---
 The Conservation Reserve Program (CRP) is arguably the world’s largest conservation
@@ -34,4 +34,4 @@ price in terms of cost-effectiveness by increasing participation and reducing re
 
 [Download](https://doi.org/10.1016/j.jeem.2021.102439)
 
-Recommended citation: Cramton, P., Hellerstein, D., Higgins, N., Iovanna, R., López Vargas, K. & Wallander, S. (2021). &quot;Improving the Cost-Effectiveness of the Conservation Reserve Program: A Laboratory Study.&quot; <i>Journal of Environmental Economics and Management</i>. 108, 102439.
+Recommended citation: Cramton, P., Hellerstein, D., Higgins, N., Iovanna, R., López Vargas, K. & Wallander, S. (2021). &quot;Improving the Cost-Effectiveness of the Conservation Reserve Program: A Laboratory Study.&quot; <i>Journal of Environmental Economics and Management</i>, 108, 102439.
