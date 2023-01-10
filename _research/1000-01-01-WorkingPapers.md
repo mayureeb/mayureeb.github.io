@@ -9,12 +9,12 @@ permalink:
 
 excerpt: ''
 
-date:
+date: ---
 
 venue: ''
 
 paperurl: ''
 
-citation: ''
+citation: ' '
 
 ---
