@@ -22,4 +22,4 @@ Over one-third of the countries worldwide are presidential democracies, and, in 
 
 [Download]()
 
-Recommended citation: 'López Vargas, K., Medina, S. & Moromizato, G. (2022). &quot;Separation of Powers and Electoral Rules: A Laboratory Study of Presidential Democracies.&quot; <i>Working Paper</i>.'
+Recommended citation: López Vargas, K., Medina, S. & Moromizato, G. (2022). &quot;Separation of Powers and Electoral Rules: A Laboratory Study of Presidential Democracies.&quot; <i>Working Paper</i>.
