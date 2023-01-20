@@ -12,4 +12,8 @@ We study the impact of interpersonal comparisons on risk attitudes in a field ex
 
 [Download](https://doi.org/10.1016/j.econlet.2019.03.011)
 
+working: 1
+
+tags: ['tag2']
+
 Recommended citation: Jaramillo, M. & López Vargas, K. (2019). &quot;Interpersonal Comparisons and Risk Attitudes in the Field.&quot; <i>Economics Letters</i>, 179, 16-18.
