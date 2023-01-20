@@ -16,6 +16,10 @@ paperurl: 'https://doi.org/10.1016/j.jeem.2021.102439'
 
 citation: 'Cramton, P., Hellerstein, D., Higgins, N., Iovanna, R., López Vargas, K. & Wallander, S. (2021). &quot;Improving the Cost-Effectiveness of the Conservation Reserve Program: A Laboratory Study.&quot; <i>Journal of Environmental Economics and Management</i>, 108, 102439.'
 
+working: 0
+
+tags: ['tag1']
+
 ---
 The Conservation Reserve Program (CRP) is arguably the world’s largest conservation
 program on private lands, with $1.8 billion paid to farmers in 2017 for practices on 23.4
