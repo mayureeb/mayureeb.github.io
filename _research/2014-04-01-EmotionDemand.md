@@ -15,7 +15,7 @@ paperurl: ''
 
 citation: 'Grosskopf, B. & López Vargas, K. (2014). &quot;On the Demand for Expressing Emotions.&quot; <i>Working Paper</i>.'
 
-working: 0
+working: 1
 
 tags: ['tag2']
 
