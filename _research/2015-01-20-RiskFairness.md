@@ -16,6 +16,10 @@ paperurl: 'http://econweb.umd.edu/~lopez-vargas/LopezVargas_JMP_2014.pdf'
 
 citation: 'López Vargas, K. (2014). &quot;Risk Attitudes and Fairness: Theory and Experiment.&quot; <i>Job Market Paper</i>'
 
+working: 0
+
+tags: ['tag2']
+
 ---
 
 
