@@ -10,7 +10,7 @@ paperurl: 'https://doi.org/10.1016/j.geb.2014.10.008'
 
 citation: 'Filiz-Ozbay, E., López Vargas, K. & Ozbay, E. Y. (2015). &quot;Multi-Object Auctions with Resale: Theory and Experiment.&quot; <i>Games and Economic Behavior</i>, 89, 1-16.'
 
-working: 0
+PublicationStatus: 'Published'
 
 tags: ['Experiment','Laboratory','Auctions','Markets']
 ---
