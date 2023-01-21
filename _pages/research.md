@@ -15,11 +15,11 @@ author_profile: true
 
 
 
-{% assign button_style = 'margin: 5px;font-size: 12px;font-family: "Arial"; ;;padding:5px 10px 5px 10px;background:white;color:#black;outline:none;border-radius:3px;border: 1px solid black;transition: 0.3s;' %}
+{% assign button_style = 'margin: 5px;font-size: 12px; ;;padding:5px 10px 5px 10px;background:white;color:#black;outline:none;border-radius:3px;border: 1px solid black;transition: 0.3s;' %}
 <div>
     {% for tag_sample in tags_names %}
   	<button id = "b_{{tag_sample}}" onclick="checked('{{tag_sample}}')" style="{{button_style}}" onmouseover="func_hover('b_{{tag_sample}}')" onmouseout= "func_out('{{tag_sample}}')">
-	<input type="checkbox" id="{{tag_sample}}"  checked=checked style="pointer-events: none;margin-right:8px">{{tag_sample}}</button>
+	<input type="checkbox" id="{{tag_sample}}"  checked=checked ;margin-right:8px">{{tag_sample}}</button>
     {%endfor%}
     
 </div>
