@@ -17,7 +17,7 @@ paperurl: 'https://ssrn.com/abstract=4319590'
 
 citation: 'Feldman, P. & López Vargas, K. (2023). &quot;Disentangling Risk Attitudes and Other-Regarding Preferences: Theory and Experiment.&quot; <i>Working Paper</i>.'
 
-working: 1
+PublicationStatus: 'WorkingPaper'
 
 tags: ['Experiment','Laboratory','Fairness','Other-Regarding','RiskAttitudes']
 
