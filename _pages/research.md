@@ -65,7 +65,7 @@ author_profile: true
               chec.checked = true; 
               toggle(tag,'block');
 	      button_tag.style.border = "1px solid black";
-	      button_tag.style.backgroundColor = "#white";
+	      button_tag.style.backgroundColor = "white";
               
           }
           else if (chec.checked == true) {
@@ -88,7 +88,7 @@ author_profile: true
   function func_hover(tag){
     let elemento = document.getElementById(tag);
     elemento.style.backgroundColor = "#878484";
-    elemento.style.border = "#2px solid black";
+    elemento.style.border = "1px solid black";
 					      
     
     
@@ -99,8 +99,8 @@ author_profile: true
     let b_tag = 'b_'+tag;
     let chec = document.getElementById(tag);
     let elemento = document.getElementById(b_tag);
-    if (chec.checked == false){elemento.style.border = "#0px solid black";}	
-    else {elemento.style.backgroundColor = "#white";}
+    if (chec.checked == false){elemento.style.border = "1px solid black";}	
+    else {elemento.style.backgroundColor = "white";}
    
     
 	}
