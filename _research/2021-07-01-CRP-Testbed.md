@@ -16,7 +16,7 @@ paperurl: 'https://doi.org/10.1016/j.jeem.2021.102439'
 
 citation: 'Cramton, P., Hellerstein, D., Higgins, N., Iovanna, R., López Vargas, K. & Wallander, S. (2021). &quot;Improving the Cost-Effectiveness of the Conservation Reserve Program: A Laboratory Study.&quot; <i>Journal of Environmental Economics and Management</i>, 108, 102439.'
 
-working: 0
+PublicationStatus: 'Published'
 
 tags: ['Experiment','Laboratory','Auctions','Markets','Environmental']
 
