@@ -24,25 +24,29 @@ author_profile: true
     {%endfor%}
     
 </div>
-  <div><h2> Publications </h2></div>
+<hr style="border-color:black;">
+<div><h2> Publications </h2></div>
+<hr style="border-color:black;">
 {% for post in site.research reversed %}
-  {% if post.working == 0 %}
+  {% if post.PublicationStatus == 'Published' %}
     {% include archive-single.html %}
   {% endif %}
 {% endfor %}
 
-
+<hr style="border-color:black;">
 <div><h2> Working Papers </h2> </div>
+<hr style="border-color:black;">
 {% for post in site.research reversed %}
-  {% if post.working == 1 %}
+  {% if post.PublicationStatus == 'WorkingPaper' %}
     {% include archive-single.html %}
   {% endif %}
 {% endfor %}
  
- 
+ <hr style="border-color:black;">
  <div><h2> Work in Progress </h2></div>
+ <hr style="border-color:black;">
 {% for post in site.research reversed %}
-  {% if post.working == 2 %}
+  {% if post.PublicationStatus == 'WorkInProgress' %}
     {% include archive-single.html %}
   {% endif %}
 {% endfor %}
