@@ -19,7 +19,7 @@ citation: 'Fuhrmann-Riebel, H., D’Exelle, B., López Vargas, K., Tonke, S. & V
 
 working: 1
 
-tags: ['tag2']
+tags: ['Experiment','Field','Environmental','CollectiveAction','SocialNorms','Beliefs']
 
 ---
 We study how correcting people’s beliefs about social norms and behavioral trends encourages collective action in a setting where the desired behavior is not yet prevalent. In a field experiment among 1,709 subjects, we test whether low sign-up rates for a recycling program in urban Peru can be increased by providing information that (1) most people regard participation in the program as important, i.e., the “injunctive norm,” (2) an increasing recent trend in sign-up rates. Correcting inaccurate beliefs increases sign-up decisions significantly among people who underestimate either the injunctive norm or the positive trend. Our paper addresses the important and little-understood question of how to stimulate collective action where it is currently weak.
