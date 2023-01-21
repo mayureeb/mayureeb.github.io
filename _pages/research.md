@@ -64,14 +64,14 @@ author_profile: true
           if (chec.checked == false){
               chec.checked = true; 
               toggle(tag,'block');
-	      button_tag.style.border = "2px solid black";
-	      button_tag.style.backgroundColor = "#505050";
+	      button_tag.style.border = "1px solid black";
+	      button_tag.style.backgroundColor = "#white";
               
           }
           else if (chec.checked == true) {
               chec.checked = false;
               toggle(tag,'none');
-	      button_tag.style.border = "0px solid black";
+	      button_tag.style.border = "1px solid black";
 	      button_tag.style.backgroundColor = "#878484";
               
           }
@@ -100,7 +100,7 @@ author_profile: true
     let chec = document.getElementById(tag);
     let elemento = document.getElementById(b_tag);
     if (chec.checked == false){elemento.style.border = "#0px solid black";}	
-    else {elemento.style.backgroundColor = "#505050";}
+    else {elemento.style.backgroundColor = "#white";}
    
     
 	}
