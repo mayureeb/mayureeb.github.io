@@ -18,7 +18,7 @@ citation: 'Cramton, P., Hellerstein, D., Higgins, N., Iovanna, R., López Vargas
 
 working: 0
 
-tags: ['tag1']
+tags: ['Experiment','Laboratory','Auctions','Markets','Environmental']
 
 ---
 The Conservation Reserve Program (CRP) is arguably the world’s largest conservation
