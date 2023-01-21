@@ -17,7 +17,7 @@ paperurl: 'https://ssrn.com/abstract=4311583'
 
 citation: 'Fuhrmann-Riebel, H., D’Exelle, B., López Vargas, K., Tonke, S. & Verschoor, A. (2022). &quot;Misperceived Trends and Norms: A Field Experiment to Address Weak Collective Action.&quot; <i>Working Paper</i>.'
 
-working: 1
+PublicationStatus: 'WorkingPaper'
 
 tags: ['Experiment','Field','Environmental','CollectiveAction','SocialNorms','Beliefs']
 
