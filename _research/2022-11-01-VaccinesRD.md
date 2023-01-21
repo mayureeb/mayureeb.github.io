@@ -17,7 +17,7 @@ paperurl: 'https://drive.google.com/file/d/15dxqXflVxRSDLo2mXjsOQye12ijGEMBD/vie
 
 citation: 'López Vargas, K., Parodi, S., Ramirez, I. & Villa-Paro, P. (2022). &quot;Messenger and Spillovers Effects on Infant Immunization: A Field Experiment.&quot; <i>Working Paper</i>.'
 
-working: 1
+PublicationStatus: 'WorkingPaper'
 
 tags: ['Experiment','Field','Health','Nudges']
 
