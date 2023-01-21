@@ -7,7 +7,7 @@ date: 2019-03-07
 venue: 'Economics Letters'
 paperurl: 'https://doi.org/10.1016/j.econlet.2019.03.011'
 citation: 'Jaramillo, M. & López Vargas, K. (2019). &quot;Interpersonal Comparisons and Risk Attitudes in the Field.&quot; <i>Economics Letters</i>, 179, 16-18.'
-working: 1
+PublicationStatus: 'WorkingPaper'
 
 tags: ['Experiment','Field','Fairness','Other-Regarding','RiskAttitudes']
 ---
