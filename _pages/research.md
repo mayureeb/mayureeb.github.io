@@ -24,7 +24,7 @@ author_profile: true
     {%endfor%}
     
 </div>
-<hr style="border-color:black;">
+
 <div><h2> Publications </h2></div>
 <hr style="border-color:black;">
 {% for post in site.research reversed %}
@@ -33,7 +33,7 @@ author_profile: true
   {% endif %}
 {% endfor %}
 
-<hr style="border-color:black;">
+
 <div><h2> Working Papers </h2> </div>
 <hr style="border-color:black;">
 {% for post in site.research reversed %}
@@ -42,7 +42,7 @@ author_profile: true
   {% endif %}
 {% endfor %}
  
- <hr style="border-color:black;">
+
  <div><h2> Work in Progress </h2></div>
  <hr style="border-color:black;">
 {% for post in site.research reversed %}
