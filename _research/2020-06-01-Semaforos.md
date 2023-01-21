@@ -19,7 +19,7 @@ citation: 'López Vargas, K., Rossi, A. & Zhang, R. (2020). &quot;The Impact of 
 
 working: 2
 
-tags: ['tag3']
+tags: ['Experiment','Field','Other-Regarding','Altruism','PeersInfluence']
 
 ---
 Our paper studies the impact of peer's giving behavior on people's willingness to donate. We implement a field experiment on donations to street performers at stoplights on the streets of Lima, Perú. The level of analysis is the vehicle and the treatment condition is defined as observing another vehicle making a donation.
