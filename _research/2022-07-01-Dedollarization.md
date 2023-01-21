@@ -17,7 +17,7 @@ paperurl: 'https://doi.org/10.1016/j.jebo.2022.05.012'
 
 citation: 'Arrieta, J., Florian, D., López Vargas, K. & Morales, V. (2022). &quot;Policies for transactional de-dollarization: A laboratory study.&quot; <i>Journal of Economic Behavior & Organization</i>, 200, 31-54.'
 
-working: 0
+PublicationStatus: 'Published'
 
 tags: ['Experiment','Laboratory','Markets']
 
