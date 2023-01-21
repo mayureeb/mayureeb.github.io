@@ -17,7 +17,7 @@ paperurl: ''
 
 citation: 'López Vargas, K., Rossi, A. & Zhang, R. (2020). &quot;The Impact of Observing Peers&#39; Giving Behavior: A Field Study.&quot; <i>Working Paper</i>.'
 
-working: 2
+PublicationStatus: 'WorkInProgress'
 
 tags: ['Experiment','Field','Other-Regarding','Altruism','PeersInfluence']
 
