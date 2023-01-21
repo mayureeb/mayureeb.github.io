@@ -17,7 +17,7 @@ paperurl: ''
 
 citation: 'López Vargas, K. & Zhang, R. (2020). &quot;The Effect of Monetary Rewards on Image Motivations in Charitable Giving.&quot; <i>Working Paper</i>.'
 
-working: 2
+PublicationStatus: 'WorkInProgress'
 
 tags: ['Experiment','Laboratory','Other-Regarding','Altruism','PeersInfluence']
 
