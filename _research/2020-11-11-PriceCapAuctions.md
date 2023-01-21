@@ -17,7 +17,7 @@ paperurl: 'https://ssrn.com/abstract=3746774'
 
 citation: 'López Vargas, K. & Klevans, G. (2020). &quot;Price Caps and Scores in Multi-Object, Pay-As-Bid Procurement Auctions.&quot; <i>Working Paper</i>.'
 
-working: 1
+PublicationStatus: 'WorkingPaper'
 
 tags: ['Theory','Mechanisms','Auctions','Markets']
 
