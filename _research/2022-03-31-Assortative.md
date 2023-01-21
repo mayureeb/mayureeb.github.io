@@ -16,7 +16,7 @@ paperurl: 'https://doi.org/10.1287/isre.2022.1135'
 
 citation: 'López Vargas, K., Runge, J. & Zhang, R. (2022). &quot;Algorithmic Assortative Matching on a Digital Social Medium.&quot; <i>Information Systems Research</i>, 33(4), 1138-1156.'
 
-working: 0
+PublicationStatus: 'Published'
 
 tags: ['Experiment','Field','Markets','Matching']
 
