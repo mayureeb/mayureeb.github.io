@@ -17,7 +17,7 @@ paperurl: ''
 
 citation: 'López Vargas, K., Medina, S. & Moromizato, G. (2022). &quot;Separation of Powers and Electoral Rules: A Laboratory Study of Presidential Democracies.&quot; <i>Working Paper</i>.'
 
-working: 2
+PublicationStatus: 'WorkInProgress'
 
 tags: ['Experiment','Laboratory','PoliticalEconomy']
 
