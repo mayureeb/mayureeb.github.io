@@ -8,7 +8,7 @@ date: 2017-09-01
 location: "Santa Cruz, CA"
 ---
 
-[Check my awesome notes here https://kmlv.github.io/Econ100A_F17/](https://kmlv.github.io/Econ100A_F17/)
+[Check my notes here https://kmlv.github.io/Econ100A_F17/](https://kmlv.github.io/Econ100A_F17/)
 
 <!-- Heading 1 -->
 <!-- ====== -->
