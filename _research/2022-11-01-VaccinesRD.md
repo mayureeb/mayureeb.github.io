@@ -1,6 +1,6 @@
 ---
 
-title: "Messenger and Spillovers Effects on Infant Immunization: A Field Experiment"
+title: "Messenger and Spillover Effects on Infant Immunization: A Field Experiment"
 
 collection: research
 
@@ -15,7 +15,7 @@ venue: ''
 
 paperurl: 'https://drive.google.com/file/d/15dxqXflVxRSDLo2mXjsOQye12ijGEMBD/view?usp=sharing'
 
-citation: 'López Vargas, K., Parodi, S., Ramirez, I. & Villa-Paro, P. (2022). &quot;Messenger and Spillovers Effects on Infant Immunization: A Field Experiment.&quot; <i>Working Paper</i>.'
+citation: 'López Vargas, K., Parodi, S., Ramirez, I. & Villa-Paro, P. (2022). &quot;Messenger and Spillover Effects on Infant Immunization: A Field Experiment.&quot; <i>Working Paper</i>.'
 
 PublicationStatus: 'WorkingPaper'
 
@@ -26,4 +26,4 @@ We study the messenger and spillover effects of an information campaign about in
 
 [Download](https://drive.google.com/file/d/15dxqXflVxRSDLo2mXjsOQye12ijGEMBD/view?usp=sharing)
 
-Recommended citation: López Vargas, K., Parodi, S., Ramirez, I. & Villa-Paro, P. (2022). &quot;Messenger and Spillovers Effects on Infant Immunization: A Field Experiment.&quot; <i>Working Paper</i>.
+Recommended citation: López Vargas, K., Parodi, S., Ramirez, I. & Villa-Paro, P. (2022). &quot;Messenger and Spillover Effects on Infant Immunization: A Field Experiment.&quot; <i>Working Paper</i>.
