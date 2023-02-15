@@ -2,7 +2,7 @@
 title: "Graduate Teaching Assistant"
 collection: teaching
 permalink: /teaching/2019-spring-teaching-1
-venue: "Introduction to Transportation Engineering (CEE 327)"
+course: "Introduction to Transportation Engineering (CEE 327)"
 department: "Civil and Environmental Engineering"
 ---
 
