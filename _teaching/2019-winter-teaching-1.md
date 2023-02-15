@@ -3,7 +3,7 @@ title: "Transportation Database Management (CEE 512/412)"
 collection: teaching
 type: "Course Instructor"
 permalink: /teaching/2019-winter-teaching-1
-venue: "Department of Civil and Environmental Engineering"
+venue: "Department of Civil and Environmental Engineering, Winter"
 date: 2019-09-01
 location: "Seattle, WA"
 ---
