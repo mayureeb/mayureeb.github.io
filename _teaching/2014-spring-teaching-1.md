@@ -1,14 +1,14 @@
 ---
-title: "Pre-Doctoral Instructor"
+title: "Course Instructor"
 collection: teaching
-type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+permalink: /teaching/2019-winter-teaching-1
+venue: "University of Washington, Civil and Environmental Engineering"
+location: "Seattle, WA, USA"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+• Revised and developed new course and project material for a class of 40+ students. Updated the
+programming language-based assignments and exams based on the latest technological developments.
+• Taught lectures and conducted lab work on Python, SQL, and R programming languages.
 
 Heading 1
 ======
