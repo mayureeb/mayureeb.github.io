@@ -11,7 +11,6 @@ author_profile: true
 
 {% include base_path %}
 
-{% include tags_names.html %}
 
 
 
