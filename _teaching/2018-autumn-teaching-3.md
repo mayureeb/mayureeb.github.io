@@ -1,9 +1,9 @@
 ---
 title: "Robotics, Invited Guest Lecturer"
 collection: teaching
-type: "Department of Electrical and Computer Engineering, "
+type: "Department of Electrical and Computer Engineering"
 permalink: /teaching/2018-autumn-teaching-3
-venue: "Autumn 2018"
+venue: "Autumn"
 date: 2018-09-01
 location: "Seattle, WA"
 ---
