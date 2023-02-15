@@ -6,7 +6,7 @@ venue: "University of Washington, Civil and Environmental Engineering"
 location: "Seattle, WA, USA"
 ---
 Transportation Database Management (CEE 512/412)
-======
+------------------------------------------------
 • Revised and developed new course and project material for a class of 40+ students. Updated the
 programming language-based assignments and exams based on the latest technological developments.
 
