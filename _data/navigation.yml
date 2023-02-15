@@ -4,15 +4,15 @@ main:
   - title: "Research"
     url: /researchprojects/ 
 
-  - title: "Publications and Presentations"
+  - title: "Publications & Talks"
     url: /talks/    
 
-  - title: "AI and Data Science for Social Good"
+  - title: "AI & DSSG"
     url: /AI_dssg/
     
   - title: "Teaching"
     url: /teaching/ 
     
-  - title: "Services and Extracurriculars"
+  - title: "Services & Extracurriculars"
     url: /services/  
  
