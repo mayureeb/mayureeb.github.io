@@ -8,6 +8,7 @@ location: "Seattle, WA, USA"
 
 • Revised and developed new course and project material for a class of 40+ students. Updated the
 programming language-based assignments and exams based on the latest technological developments.
+
 • Taught lectures and conducted lab work on Python, SQL, and R programming languages.
 
 Heading 1
