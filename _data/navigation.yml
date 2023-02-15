@@ -1,17 +1,17 @@
 # main links links
 main:
 
-  - title: "Research Projects"
+  - title: "Research"
     url: /researchprojects/ 
 
   - title: "Publications and Presentations"
     url: /talks/    
 
-  - title: "Teaching"
-    url: /teaching/    
+  - title: "AI and Data Science for Social Good"
+    url: /AI_dssg/
     
-  - title: "CV"
-    url: /cv/
+  - title: "Teaching"
+    url: /teaching/ 
     
   - title: "Services and Extracurriculars"
     url: /services/  
