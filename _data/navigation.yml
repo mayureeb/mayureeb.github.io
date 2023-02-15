@@ -2,7 +2,7 @@
 main:
 
   - title: "Research"
-    url: /researchprojects/ 
+    url: /research/ 
 
   - title: "Publications & Presentations"
     url: /talks/    
