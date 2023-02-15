@@ -10,12 +10,3 @@ location: "Seattle, WA, USA"
 programming language-based assignments and exams based on the latest technological developments.
 
 • Taught lectures and conducted lab work on Python, SQL, and R programming languages.
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
