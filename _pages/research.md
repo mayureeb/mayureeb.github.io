@@ -32,6 +32,11 @@ author_profile: true
 {% endfor %}
 
 
+
+• Developing Artificial Intelligence based framework to analyze in-vehicle driver/occupant status (In collaboration with DENSO International America Inc.).
+
+
+
 <div><h2>Past Researh Projects </h2> </div>
 <hr style="border-color:black;">
 {% for post in site.research reversed %}
