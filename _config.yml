@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Mayuree Binjolkar"
 title_separator          : "-"
 name                     : &name "Mayuree Binjolkar"
-description              : &description "Researcher in Machine Learning, AI and Transportation at University of Washington"
+description              : &description "Researcher in Human Driver Sequential Decision Making, Human-Automation Interaction and Artificial Intelligence at University of Washington"
 url                      : https://mayureeb.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "mayureeb/mayureeb.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Mayuree Binjolkar"
   avatar           : "profile_pic.jpg"
-  bio              : "Researcher in Machine Learning, AI and Transportation"
+  bio              : "uman Driver Sequential Decision Making, Human-Automation Interaction and Artificial Intelligence"
   location         :
   employer         : "University of Washington"
   pubmed           :
