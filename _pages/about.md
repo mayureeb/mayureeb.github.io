@@ -14,4 +14,4 @@ My research interests are broadly at the interface of humam-automation interacti
 
 I am currently a memeber of the ACP-70 Standing Committee on Highway Traffic Monitoring, Transportation Research Board, National Academies of Sciences, Engineering and Medicine.
 
-Outside of research, I am highly involved in acitivities related to Diversity, Equity and Inclusion (DEI) efforts in research and engineering.
+Outside of research, I am highly involved in acitivities related to Diversity, Equity and Inclusion (DEI) efforts in research and engineering. You can view my statement [here]{}
