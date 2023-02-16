@@ -32,29 +32,29 @@ author_profile: true
 {% endfor %}
 
 
-•	Member, ACP-70 Standing Committee on Highway Traffic Monitoring, Transportation Research Board, National Academies of Sciences, Engineering and Medicine, April 2022 - Present
+Member, ACP-70 Standing Committee on Highway Traffic Monitoring, Transportation Research Board, National Academies of Sciences, Engineering and Medicine, April 2022 - Present
 
-•	Grace Hopper Celebration Scholarship 2021
+Grace Hopper Celebration Scholarship 2021
 
-•	Senator Scott White Memorial Scholarship 2020
+Senator Scott White Memorial Scholarship 2020
 
-•	ACM SIGKKD (Conference of Knowledge Discovery) 2020 Student Participation Award
+ACM SIGKKD (Conference of Knowledge Discovery) 2020 Student Participation Award
 
-•	Outstanding Graduate Student Scholarship, Institute of Transportation Engineers, 2020
+Outstanding Graduate Student Scholarship, Institute of Transportation Engineers, 2020
 
-•	William A. Bulley summer fellowship by the Department of Civil and Environmental Engineering, Summer – 2019
+William A. Bulley summer fellowship by the Department of Civil and Environmental Engineering, Summer – 2019
 
-•	Data Science for Social Good Summer Research Fellowship, eScience Institute, Urban@UW & Microsoft, Summer – 2017
+Data Science for Social Good Summer Research Fellowship, eScience Institute, Urban@UW & Microsoft, Summer – 2017
 
-•	“Best Idea” award in the Norwegian Transportation Design Competition, June 2018
+“Best Idea” award in the Norwegian Transportation Design Competition, June 2018
 
-•	Provided full scholarship by the University of Washington for the Norwegian Transportation Design Competition, June 2018
+Provided full scholarship by the University of Washington for the Norwegian Transportation Design Competition, June 2018
 
-•	1st Place, Student Competition, Institute of Transportation Engineers, Washington State Chapter, 2017
+1st Place, Student Competition, Institute of Transportation Engineers, Washington State Chapter, 2017
 
-•	Received 3rd Place in the Annual Traffic Bowl competition from the Institute of Transportation Engineers, Portland, Oregon, October 2018
+Received 3rd Place in the Annual Traffic Bowl competition from the Institute of Transportation Engineers, Portland, Oregon, October 2018
 
-•	Technion – International School of Engineering Academic Scholarship (2011-2015)
+Technion – International School of Engineering Academic Scholarship (2011-2015)
 
 <div><h2>Services </h2> </div>
 <hr style="border-color:black;">
@@ -64,23 +64,23 @@ author_profile: true
   {% endif %}
 {% endfor %}
  
-•	Member, ACP-70 Standing Committee on Highway Traffic Monitoring, Transportation Research Board, National Academies of Sciences, Engineering and Medicine, April 2022 - Present
+Member, ACP-70 Standing Committee on Highway Traffic Monitoring, Transportation Research Board, National Academies of Sciences, Engineering and Medicine, April 2022 - Present
 
-•	President, Institute of Transportation Engineers, University of Washington Student Chapter, 2019-2020
+President, Institute of Transportation Engineers, University of Washington Student Chapter, 2019-2020
 
-•	President, Indian Student Organization (RSO) - Umang, 2019
+President, Indian Student Organization (RSO) - Umang, 2019
 
-•	Treasurer, Indian Student Organization (RSO) - Umang, 2018
+Treasurer, Indian Student Organization (RSO) - Umang, 2018
 
-•	Graduate and Professional Student Senate (GPPS) Representative, Foundation for International Understanding Through Students (FIUTS), 2019
+Graduate and Professional Student Senate (GPPS) Representative, Foundation for International Understanding Through Students (FIUTS), 2019
 
-•	Graduate Student Committee Member, Justice Equity Diversity and Inclusion (JEDI) committee, Department of Civil and Environmental Engineering, 2021-2022
+Graduate Student Committee Member, Justice Equity Diversity and Inclusion (JEDI) committee, Department of Civil and Environmental Engineering, 2021-2022
 
-•	Speaker, National Math and Science Initiative, July 2020
+Speaker, National Math and Science Initiative, July 2020
 
-•	Committee Member, Artificial Intelligence Committee, Transportation and Development Institute, American Society of Civil Engineers (ASCE), 2020 - Present
+Committee Member, Artificial Intelligence Committee, Transportation and Development Institute, American Society of Civil Engineers (ASCE), 2020 - Present
 
-•	Transportation Student Conference Chair, Pacific Transportation Consortium Region 10, United States Department of Transportation, October 2019
+Transportation Student Conference Chair, Pacific Transportation Consortium Region 10, United States Department of Transportation, October 2019
 
 <script> 
   
