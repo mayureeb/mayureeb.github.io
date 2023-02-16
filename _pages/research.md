@@ -35,7 +35,7 @@ author_profile: true
 
 • Developing Artificial Intelligence based framework to analyze in-vehicle driver/occupant status (In collaboration with DENSO International America Inc.).
 
-
+• Understanding the neurocognitive impact of concussion on simulated and real-world driving performance among young drivers (Funded by the National Institute of Health (NIH)).
 
 <div><h2>Past Researh Projects </h2> </div>
 <hr style="border-color:black;">
@@ -45,7 +45,11 @@ author_profile: true
   {% endif %}
 {% endfor %}
  
+• Risk Mitigation and Modeling of Driver Behaviors in Scenarios of Varying Complexities: Developed an experimental design for a Driving Simulator study with the Toyota Safety Research Center to identify "Risk Mitigation and Modeling of Driver Behaviors in Scenarios of Varying Complexities" and carried out data-collection for 38 human subjects. Developed a One-Class Support Vector Machine model for analyzing challenging acceleration/braking events in time-series driving data. This provided a basic understanding of the behavioral patterns of human driving at roadway intersections.Developed a Reinforcement Learning framework for understanding driver decision-making. This work is in progress and will be used to inform the decision-making for autonomous vehicles.
 
+• Developed a geospatial database and a data fusion methodology for capturing the speed limit on the National Highway System in the United States. This project was done in collaboration with the Federal Highway Administration (FHWA-USDOT). The database developed from this study is being used as an open database by FHWA to advance its linear-referencing-system-based datasets.
+
+•Adapted machine learning-based methodologies to analyze transit data and capture travel behavior. Transit agencies used this work to inform their decision-making. Developed a geospatial database for storing the electronic smart card transit fare data for Seattle provided by nine transit agencies.
 
 <script> 
   
