@@ -4,11 +4,8 @@ main:
   - title: "Research"
     url: /research/ 
 
-  - title: "Publications & Presentations"
+  - title: "Publications & Talks"
     url: /talks/    
-
-  - title: "AI & Data Science for Social Good"
-    url: /AI_dssg/
     
   - title: "Teaching"
     url: /teaching/ 
