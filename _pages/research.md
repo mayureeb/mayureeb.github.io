@@ -22,6 +22,27 @@ author_profile: true
     {%endfor%}
     
 </div>
+Memo: Cognitive Impairment and Driving Performance in Youth After Concussion
+1. Cognitive Impairment and Driving Skills in Youth After Concussion
+
+Journal: Journal of Neurotrauma, 2023.
+DOI: 10.1089/neu.2022.0308
+
+This study explored the impact of concussions on cognitive processes critical for driving among young adults (16-25 years). Utilizing a driving simulator and neurocognitive tests, the research revealed that concussed individuals exhibited worse performance in fluid cognitive skills and higher symptom reports compared to controls. Despite small differences in simulated driving performance, significant associations were found between neurocognitive test scores and driving task performance. These findings suggest the potential utility of neurocognitive screening in predicting the ability to return to driving post-concussion.
+
+2. Driving Characteristics of Young Adults Prior to and Following Concussion
+
+Journal: Traffic Injury Prevention, 2024.
+DOI: 10.1080/15389588.2023.2250493
+
+This study assessed the pre- and post-concussion driving behaviors of young adults. It was found that concussed individuals had more driving citations, higher rates of psychiatric disorders, and were more likely to have sustained prior concussions compared to their uninjured peers. Post-concussion, most drivers did not alter their driving behaviors, although some modifications like reduced night driving were observed. The study underscores the need for clear post-concussion driving guidelines.
+
+3. Neurocognitive Markers and Driving Performance: A Cluster Analysis
+
+Journal: Transportation Research Part F: Traffic Psychology and Behaviour, 2024.
+DOI: 10.1016/j.trf.2024.03.018
+
+This research utilized cluster analysis on neurocognitive test data from a driving simulator study to categorize drivers into high, moderate, and low-functioning groups. Interestingly, both concussed and non-concussed individuals appeared in each group, with the low-functioning group showing the highest incidence of concussions and poorest driving performance. These results indicate that neurocognitive testing could be instrumental in identifying at-risk drivers, irrespective of concussion history, and support the development of a fitness-to-drive assessment tool.
 
 <div><h2> Ongoing Research Projects </h2></div>
 <hr style="border-color:black;">
