@@ -7,12 +7,16 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I hold a PhD from the University of Washington, Seattle, where my research focused on human driver sequential decision-making in complex traffic scenarios. My work applies machine learning and AI to enhance the safety and efficiency of autonomous vehicles, particularly in mixed-traffic environments. I earned my bachelor's from Technion - Israel Institute of Technology and hold dual master's degrees in Transportation Engineering and Computer and Systems Engineering from the University of Washington.
+I’m a researcher and innovator with a PhD from the University of Washington, Seattle, where I explored the intricacies of human decision-making in complex systems. My passion lies in harnessing machine learning and AI to tackle real-world challenges, from enhancing the safety of autonomous vehicles to developing smarter, more efficient systems in various domains.
 
-My research interests span human-automation interaction, cognitive modeling, and AI. I’ve contributed to projects involving in-vehicle driver monitoring using deep learning, transit spatial pattern recognition, and transportation data management. As a Data Science for Social Good Fellow at the e-Science Institute, I developed semi-supervised learning methods to improve transit user origin-destination patterns in Seattle.
+My academic journey began at Technion - Israel Institute of Technology, where I earned my bachelor’s degree, and continued at the University of Washington with dual master’s degrees in Transportation Engineering and Computer & Systems Engineering.
 
-I also played a key role in an NIH-funded project, developing a fitness-to-drive metric for young adults with concussions using virtual reality scenarios and advanced data analysis. My experience includes internships in Natural Language Processing (NLP), expanding my AI expertise across domains.
+Over the years, I’ve dived into fascinating projects—from using deep learning for in-vehicle driver monitoring to shaping transit spatial patterns through advanced machine learning. As a Data Science for Social Good Fellow, I took on the challenge of improving transit systems in Seattle with innovative semi-supervised learning methods.
 
-My work has been recognized with the 3 Minute Thesis competition win and the Diversity, Equity, and Inclusion Award at UW, along with the Senator Scott White Memorial Scholarship, the William A. Bulley Fellowship, and the Outstanding Graduate Student Award. I am also an active member of the ACP-70 Standing Committee on Highway Traffic Monitoring under the Transportation Research Board.
+One of my most rewarding experiences was contributing to an NIH-funded project, where I developed a fitness-to-drive metric for young adults recovering from concussions. This comprehensive work involved creating immersive virtual reality scenarios for a driving simulator, conducting human-subject experiments, and performing multi-modal data analysis. I also integrated statistical methods and developed additional machine learning models, showcasing a complete scientific process from concept to implementation.
 
-Beyond research, I am dedicated to Diversity, Equity, and Inclusion (DEI) in engineering and data science.
+Beyond my research, I’ve broadened my AI expertise through internships in Natural Language Processing (NLP), which have opened up new avenues for applying AI across various domains.
+
+I’m honored to have received recognition along the way, including winning the 3 Minute Thesis competition at the University of Washington and the Diversity, Equity, and Inclusion Award. These achievements reflect my commitment not just to my field, but also to fostering a more inclusive and equitable environment in engineering and data science.
+
+When I’m not immersed in research, I’m actively involved in the Women in Machine Learning group, ACP-70 Standing Committee on Highway Traffic Monitoring and passionately advocate for Diversity, Equity, and Inclusion (DEI) in everything I do.
