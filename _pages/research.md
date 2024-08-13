@@ -23,40 +23,21 @@ author_profile: true
     
 </div>
 Memo: Cognitive Impairment and Driving Performance in Youth After Concussion
-1. Cognitive Impairment and Driving Skills in Youth After Concussion
 
-Journal: Journal of Neurotrauma, 2023.
-DOI: 10.1089/neu.2022.0308
+This memo synthesizes findings from three significant studies that collectively advance our understanding of how concussions impact driving performance among young adults, with implications for developing a fitness-to-drive assessment tool.
 
-This study explored the impact of concussions on cognitive processes critical for driving among young adults (16-25 years). Utilizing a driving simulator and neurocognitive tests, the research revealed that concussed individuals exhibited worse performance in fluid cognitive skills and higher symptom reports compared to controls. Despite small differences in simulated driving performance, significant associations were found between neurocognitive test scores and driving task performance. These findings suggest the potential utility of neurocognitive screening in predicting the ability to return to driving post-concussion.
-
-2. Driving Characteristics of Young Adults Prior to and Following Concussion
-
-Journal: Traffic Injury Prevention, 2024.
-DOI: 10.1080/15389588.2023.2250493
-
-This study assessed the pre- and post-concussion driving behaviors of young adults. It was found that concussed individuals had more driving citations, higher rates of psychiatric disorders, and were more likely to have sustained prior concussions compared to their uninjured peers. Post-concussion, most drivers did not alter their driving behaviors, although some modifications like reduced night driving were observed. The study underscores the need for clear post-concussion driving guidelines.
-
-3. Neurocognitive Markers and Driving Performance: A Cluster Analysis
-
-Journal: Transportation Research Part F: Traffic Psychology and Behaviour, 2024.
-DOI: 10.1016/j.trf.2024.03.018
-
-This research utilized cluster analysis on neurocognitive test data from a driving simulator study to categorize drivers into high, moderate, and low-functioning groups. Interestingly, both concussed and non-concussed individuals appeared in each group, with the low-functioning group showing the highest incidence of concussions and poorest driving performance. These results indicate that neurocognitive testing could be instrumental in identifying at-risk drivers, irrespective of concussion history, and support the development of a fitness-to-drive assessment tool.
-
-<div><h2> Ongoing Research Projects </h2></div>
-<hr style="border-color:black;">
-{% for post in site.research reversed %}
-  {% if post.PublicationStatus == 'Published' %}
-    {% include archive-single.html %}
-  {% endif %}
-{% endfor %}
+Cognitive Impairment and Driving Skills in Youth After Concussion
+Journal of Neurotrauma, 2023. DOI: 10.1089/neu.2022.0308
+This study investigated the impact of concussions on cognitive processes critical for driving in young adults aged 16-25. Through the use of a driving simulator and neurocognitive tests, the research revealed that concussed individuals exhibited impaired fluid cognitive skills and reported higher symptom severity compared to controls. Although the differences in simulated driving performance were minor, significant correlations between neurocognitive scores and driving tasks suggest the potential of neurocognitive screening to predict driving readiness post-concussion.
+Driving Characteristics of Young Adults Prior to and Following Concussion
+Traffic Injury Prevention, 2024. DOI: 10.1080/15389588.2023.2250493
+This study focused on pre- and post-concussion driving behaviors in young adults. The findings revealed that concussed individuals had a history of more driving citations, higher rates of psychiatric disorders, and a greater likelihood of previous concussions compared to their uninjured peers. Post-concussion, most did not alter their driving habits, though some reported reduced night driving. The study highlights the need for clear, evidence-based guidelines for post-concussion driving.
+Neurocognitive Markers and Driving Performance: A Cluster Analysis
+Transportation Research Part F: Traffic Psychology and Behaviour, 2024. DOI: 10.1016/j.trf.2024.03.018
+Using cluster analysis on neurocognitive test data from a driving simulator study, this research categorized drivers into high, moderate, and low-functioning groups. Both concussed and non-concussed individuals appeared in each group, with the low-functioning group demonstrating the highest concussion incidence and poorest driving performance. These findings underscore the potential of neurocognitive testing in identifying at-risk drivers and support the ongoing development of a fitness-to-drive assessment tool.
+Together, these studies contribute valuable insights into the relationship between neurocognitive functioning and driving performance following a concussion. The results support the use of neurocognitive tests in assessing fitness to drive, with significant implications for public health and road safety.
 
 
-
-• Developing Artificial Intelligence based framework to analyze in-vehicle driver/occupant status (In collaboration with DENSO International America Inc.).
-
-• Understanding the neurocognitive impact of concussion on simulated and real-world driving performance among young drivers (Funded by the National Institute of Health (NIH)).
 
 <div><h2>Past Researh Projects </h2> </div>
 <hr style="border-color:black;">
@@ -65,6 +46,9 @@ This research utilized cluster analysis on neurocognitive test data from a drivi
     {% include archive-single.html %}
   {% endif %}
 {% endfor %}
+
+
+• Developing Artificial Intelligence based framework to analyze in-vehicle driver/occupant status (In collaboration with DENSO International America Inc.).
  
 • Risk Mitigation and Modeling of Driver Behaviors in Scenarios of Varying Complexities: Developed an experimental design for a Driving Simulator study with the Toyota Safety Research Center to identify "Risk Mitigation and Modeling of Driver Behaviors in Scenarios of Varying Complexities" and carried out data-collection for 38 human subjects. Developed a One-Class Support Vector Machine model for analyzing challenging acceleration/braking events in time-series driving data. This provided a basic understanding of the behavioral patterns of human driving at roadway intersections. Developed a Reinforcement Learning framework for understanding driver decision-making. This work is in progress and will be used to inform the decision-making for autonomous vehicles.
 
