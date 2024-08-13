@@ -27,16 +27,17 @@ author_profile: true
 
 <div style="margin-top: 20px;">
   <h3 style="color: #1a73e8;">Cognitive Impairment and Driving Skills in Youth After Concussion</h3>
-  <p><strong>Journal of Neurotrauma, 2023. DOI: 10.1089/neu.2022.0308</strong></p>
-  <p>This study explores how concussions affect cognitive processes critical to driving in young adults aged 16-25, highlighting the potential of neurocognitive screening for post-concussion driving readiness.</p>
+<p><strong>Journal of Neurotrauma, 2023.</strong> DOI: <a href="https://www.liebertpub.com/doi/full/10.1089/neu.2022.0308" target="_blank" style="color: #1a73e8;">10.1089/neu.2022.0308</a></p>
+<p>This study explores how concussions affect cognitive processes critical to driving in young adults aged 16-25, highlighting the potential of neurocognitive screening for post-concussion driving readiness.</p>
 
-  <h3 style="color: #1a73e8;">Driving Characteristics of Young Adults Prior to and Following Concussion</h3>
-  <p><strong>Traffic Injury Prevention, 2024. DOI: 10.1080/15389588.2023.2250493</strong></p>
-  <p>This research examines the driving behavior of young adults pre- and post-concussion, underlining the necessity for evidence-based guidelines for post-concussion driving.</p>
+<h3 style="color: #1a73e8;">Driving Characteristics of Young Adults Prior to and Following Concussion</h3>
+<p><strong>Traffic Injury Prevention, 2024.</strong> DOI: <a href="https://www.tandfonline.com/doi/full/10.1080/15389588.2023.2250493" target="_blank" style="color: #1a73e8;">10.1080/15389588.2023.2250493</a></p>
+<p>This research examines the driving behavior of young adults pre- and post-concussion, underlining the necessity for evidence-based guidelines for post-concussion driving.</p>
 
-  <h3 style="color: #1a73e8;">Neurocognitive Markers and Driving Performance: A Cluster Analysis</h3>
-  <p><strong>Transportation Research Part F: Traffic Psychology and Behaviour, 2024. DOI: 10.1016/j.trf.2024.03.018</strong></p>
-  <p>Using cluster analysis, this study categorizes drivers based on neurocognitive performance, reinforcing the use of neurocognitive tests in identifying at-risk drivers post-concussion.</p>
+<h3 style="color: #1a73e8;">Neurocognitive Markers and Driving Performance: A Cluster Analysis</h3>
+<p><strong>Transportation Research Part F: Traffic Psychology and Behaviour, 2024.</strong> DOI: <a href="https://www.sciencedirect.com/science/article/abs/pii/S1369847824000639?via%3Dihub" target="_blank" style="color: #1a73e8;">10.1016/j.trf.2024.03.018</a></p>
+<p>Using cluster analysis, this study categorizes drivers based on neurocognitive performance, reinforcing the use of neurocognitive tests in identifying at-risk drivers post-concussion.</p>
+
 </div>
 
 <hr style="border-color: #333; margin: 40px 0;">
