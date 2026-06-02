@@ -9,6 +9,7 @@ author: Mayuree Binjolkar
 lang: en
 
 markdown: kramdown
+permalink: /blog/:title/
 sass:
   style: compressed
 

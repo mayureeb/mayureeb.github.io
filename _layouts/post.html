@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article class="section">
+  <div class="wrap wrap--narrow">
+    <p class="postfull__meta">{{ page.date | date: "%B %-d, %Y" }}{% if page.source %} · {{ page.source }}{% endif %}</p>
+    <h1 class="postfull__title">{{ page.title }}</h1>
+    <div class="postfull__body">
+      {{ content }}
+    </div>
+    <p class="postfull__back"><a href="{{ '/blog/' | relative_url }}">← All posts</a></p>
+  </div>
+</article>

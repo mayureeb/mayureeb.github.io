@@ -12,6 +12,9 @@ photo: /images/hero.jpg
 linkedin_url: https://www.linkedin.com/in/mayuree-binjolkar/
 scholar_url:
 resume_url:
+# Writing platforms — fill these in and the buttons appear automatically.
+substack_url: https://may159.substack.com
+medium_url:
 
 # Senior-signal highlights shown as a strip under the hero.
 highlights:
