@@ -1,0 +1,42 @@
+- group: ML & AI
+  items:
+    - Vision-Language Models (LLaVA, CLIP, GPT-4, Gemini, Llama)
+    - Multimodal reasoning
+    - SFT & post-training of frontier models
+    - Agentic AI systems
+    - Domain transfer (GANs, MMD)
+    - Reinforcement learning (offline RL, IRL, RLHF, bandits, DQN)
+    - CNNs / LSTMs / VAEs
+    - Federated learning
+    - NLP
+
+- group: Frameworks
+  items:
+    - PyTorch
+    - TensorFlow
+    - Hugging Face Transformers
+    - TRL
+    - LangChain
+    - AutoGen
+    - Crew AI
+    - RLlib
+    - OpenAI / Claude APIs
+    - FastAPI / Flask
+
+- group: Infrastructure
+  items:
+    - AWS
+    - GCP
+    - SageMaker
+    - MLflow
+    - Docker
+    - CI/CD (GitHub Actions)
+    - PostgreSQL
+    - Spark
+
+- group: Languages
+  items:
+    - Python
+    - C++
+    - R
+    - SQL

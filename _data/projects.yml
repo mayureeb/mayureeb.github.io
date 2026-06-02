@@ -1,0 +1,38 @@
+# Selected work, led by post-training / RL / alignment-relevant projects.
+
+- title: Deep Research Agent
+  category: Agents & evaluation
+  featured: true
+  description: >-
+    A 10-component agentic research pipeline with a critic + verifier loop, a full evaluation framework,
+    and an RL training design using process and outcome rewards.
+  tags: [Agents, Evaluation, RL]
+  url: https://github.com/mayureeb/deep-research-agent
+
+- title: VLM Evaluation Framework
+  category: Evaluation
+  description: >-
+    A framework for evaluating vision-language model behavior — prompt variants, failure-mode analysis,
+    and output validation on real-world inputs.
+  tags: [Evaluation, Alignment, VLM]
+  url: https://github.com/mayureeb/vlm-research-framework
+
+- title: Driving Behavior Research
+  category: Reinforcement learning
+  description: >-
+    Inverse RL and one-class methods on naturalistic and driving-simulator data to model decision-making
+    under uncertainty.
+  tags: [Inverse RL, Decision-making]
+  url: https://github.com/mayureeb/Driving-Behavior-Research
+
+- title: Foundation Vision Playground
+  category: Vision-language
+  description: "CLIP-based zero-shot classification and image–image retrieval."
+  tags: [CLIP, Zero-shot]
+  url: https://github.com/mayureeb/foundation-vision-playground
+
+- title: Head Pose Estimation
+  category: Computer vision
+  description: "Real-time head-pose estimation with TensorFlow and OpenCV."
+  tags: [OpenCV, TensorFlow]
+  url: https://github.com/mayureeb/headpose

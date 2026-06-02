@@ -1,0 +1,32 @@
+- role: Founding Research Scientist
+  org: Trapezoid AI
+  period: Jul 2025 – Present
+  points:
+    - Post-train frontier vision-language models for production — supervised fine-tuning, structured outputs, and the data curation that decides what actually improves them.
+    - Built the model-evaluation process — prompt variants, failure-mode analysis, and output validation — to catch unreliable behavior before it ships, informing tuning and data-curation decisions.
+    - Designed an agentic pipeline (vision models, LLM validation, multi-frame aggregation) with verification at each stage, turning raw camera streams into structured, trustworthy output.
+    - Own the production multimodal vehicle-identification system end to end — architecture, deployment, and monitoring; live with the company's first customer.
+
+- role: ML / Data Scientist
+  org: NimbleRx
+  period: Nov 2024 – May 2025
+  points:
+    - First ML hire; designed and deployed multi-armed bandit models to optimize the timing of prescription-refill messages, using behavior logs as reward signals.
+    - Built LLM-powered simulation environments to generate synthetic user-interaction trajectories for offline bandit evaluation before live deployment.
+    - Deployed reproducible RL training and evaluation pipelines on SageMaker and MLflow, including A/B testing infrastructure for model validation.
+
+- role: Research Scientist
+  org: Meili Technologies (Cornell Tech spinout)
+  period: Jul 2023 – Aug 2024
+  points:
+    - Developed multimodal occupant-monitoring systems to detect in-vehicle medical emergencies — seizures and cardiac events that occur while driving; prototypes demonstrated at CES 2024.
+    - Conducted SFT experiments on vision-language models for domain adaptation, with domain-transfer techniques (GANs, Maximum Mean Discrepancy) to close the gap between simulated and real-world signals.
+    - Built head-pose estimation frameworks for sim-to-real adaptation, including data preparation and training-configuration sweeps.
+
+- role: PhD Research — University of Washington
+  org: Toyota · DENSO · NIH-funded collaborations
+  period: 2018 – 2023
+  points:
+    - Built Inverse RL frameworks to infer latent intent and decision policies from naturalistic and VR-simulator driving data (Toyota, DENSO).
+    - Developed real-time driver-distraction detection (CNN–LSTM) across 64 conditions and federated learning for privacy-preserving occupant-state modeling; intent models adapted for ADAS (HFES 2022).
+    - Applied unsupervised clustering and multimodal feature extraction to post-concussion cognitive–motor data (NIH-funded VR study).

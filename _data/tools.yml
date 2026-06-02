@@ -1,0 +1,12 @@
+# Logos via the Simple Icons CDN. (OpenAI/AWS logos were removed from Simple Icons
+# for legal reasons, so they 404 — kept out to avoid broken images.)
+- { name: PyTorch, slug: pytorch }
+- { name: TensorFlow, slug: tensorflow }
+- { name: Hugging Face, slug: huggingface }
+- { name: scikit-learn, slug: scikitlearn }
+- { name: NumPy, slug: numpy }
+- { name: Google Cloud, slug: googlecloud }
+- { name: Docker, slug: docker }
+- { name: PostgreSQL, slug: postgresql }
+- { name: Apache Spark, slug: apachespark }
+- { name: Python, slug: python }

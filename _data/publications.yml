@@ -1,0 +1,61 @@
+# Selected. Led by RL / decision-making / alignment-relevant work.
+# `short` = venue badge text; `tint` = blue|teal|amber|slate. Add `image:` for a real figure.
+
+- authors: "Mayuree Binjolkar, Yuanjie Tu"
+  title: "Adaptive Decision-Making in Human-AI Teaming for Dynamic Driving Environments"
+  description: "How humans and AI share and adapt decisions in fast-changing environments — a human-AI alignment problem."
+  venue: "INFORMS Annual Meeting"
+  year: 2024
+  short: "INFORMS · 2024"
+  tint: blue
+
+- authors: "Mayuree Binjolkar, Sami Park, Semin Kim"
+  title: "Explainability as a Path to Foster Trust in Autonomous Driving Decision-Making"
+  description: "Treats model explainability as a route to trustworthy, aligned decision-making."
+  venue: "Inference and Decision Making for Autonomous Vehicles Workshop, Robotics: Science and Systems"
+  year: 2023
+  short: "RSS · 2023"
+  tint: amber
+
+- authors: "Mayuree Binjolkar, Linda Ng Boyle"
+  title: "Using Inverse Reinforcement Learning to Predict the Impact of Distraction on Future Driver Performance"
+  description: "Inverse RL to recover decision policies and predict behavior under distraction."
+  venue: "Joint Statistical Meeting (JSM)"
+  year: 2020
+  short: "JSM · 2020"
+  tint: blue
+
+- authors: "Mayuree Binjolkar, Kristina E. Patrick, Emily Kroshus, Linda Ng Boyle, Jin Wang, Beth Ebel, Frederick P. Rivara"
+  title: "The Implication of Young Drivers' Functional Capabilities on Fitness to Drive"
+  description: "How functional and cognitive capabilities relate to a driver's fitness to drive."
+  venue: "Transportation Research – Part F"
+  year: 2024
+  short: "TR–F · 2024"
+  tint: slate
+  url: "https://www.sciencedirect.com/science/article/abs/pii/S1369847824000639"
+
+- authors: "Mayuree Binjolkar, Linda Ng Boyle"
+  title: "Capturing Driver Status Using Naturalistic Driving Study Data: Implications for Assessing Health and Safety"
+  description: "Infers driver health and status from large-scale naturalistic driving data."
+  venue: "Proceedings of the Human Factors and Ergonomics Society Annual Meeting"
+  year: 2022
+  short: "HFES · 2022"
+  tint: slate
+
+- authors: "Kristina E. Patrick, Emily Kroshus, Linda Ng Boyle, Jin Wang, Mayuree Binjolkar, Beth Ebel, Frederick P. Rivara"
+  title: "Characteristics of Young Adults Prior to Sustaining Concussion"
+  description: "Characterizes young adults before concussion to establish baseline risk factors."
+  venue: "Traffic Injury Prevention"
+  year: 2023
+  short: "TIP · 2023"
+  tint: teal
+  url: "https://www.tandfonline.com/doi/full/10.1080/15389588.2023.2250493"
+
+- authors: "Frederick P. Rivara, Beth Ebel, Mayuree Binjolkar, Amelia Hanron, Emily Kroshus, Linda Boyle, Kristina Patrick"
+  title: "Cognitive Impairment and Driving Skills in Youth After Concussion"
+  description: "Measures how concussion impairs the cognition that safe driving depends on."
+  venue: "Journal of Neurotrauma"
+  year: 2022
+  short: "J. Neurotrauma · 2022"
+  tint: teal
+  url: "https://www.liebertpub.com/doi/full/10.1089/neu.2022.0308"

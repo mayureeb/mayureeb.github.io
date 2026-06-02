@@ -1,0 +1,9 @@
+# Three pillars: post-training, RL, AI alignment.
+- area: Post-training
+  text: "Supervised fine-tuning and RLHF of frontier models — with the data curation and evaluation that decide what actually improves them."
+
+- area: Reinforcement learning
+  text: "Offline and inverse RL, bandits, and reward modeling for sequential decision-making under uncertainty — the focus of my PhD."
+
+- area: AI alignment & evaluation
+  text: "Evaluation frameworks, verifiers, and adversarial testing that keep model behavior reliable, honest, and aligned with intent."

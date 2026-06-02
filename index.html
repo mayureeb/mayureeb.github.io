@@ -1,0 +1,127 @@
+---
+layout: default
+---
+
+{% assign p = site.data.profile %}
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero__inner">
+    <div class="hero__text">
+      <h1 class="sr-only">{{ p.name }}</h1>
+      <p class="hero__intro">{{ p.intro }}</p>
+    </div>
+    <div class="hero__photo">
+      <img src="{{ p.photo | relative_url }}" alt="{{ p.name }}" loading="eager">
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT / SKILLS ============ -->
+<section class="section" id="about">
+  <div class="wrap">
+    <h2 class="section__title">About</h2>
+    <div class="about">
+      <div class="about__bio">
+        <p>Before Trapezoid, I was a research scientist at Meili Technologies, a Cornell Tech spinout
+        detecting in-vehicle medical emergencies like seizures and cardiac events. My PhD, in Data Science
+        at the University of Washington, was on sequential decision-making under uncertainty; I also hold a
+        master's in Computer Science &amp; Systems Engineering from UW and a bachelor's from the Technion.</p>
+        <p>That thread runs through what I do now: post-training frontier models, designing the reward
+        signals and evaluations that shape their behavior, and the alignment work that keeps them reliable.</p>
+        <p>I'm a selected member of the Transportation Research Board's ACP-70 committee, part of the
+        National Academies of Sciences, Engineering, and Medicine. I also care about science communication:
+        I've worked on several outreach projects and won first place in the University of Washington's
+        university-wide Three Minute Thesis competition, along with a Diversity, Equity &amp; Inclusion Award, a
+        Grace Hopper Celebration Scholarship, and a Data Science for Social Good Fellowship.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects">
+  <div class="wrap">
+    <h2 class="section__title">Projects</h2>
+
+    <div class="grid" id="grid">
+      {% for proj in site.data.projects %}
+      <article class="card cat-{{ proj.category | slugify }}" data-cat="{{ proj.category | slugify }}">
+        <div class="card__banner">
+          <span class="card__cat">{{ proj.category }}</span>
+          {% if proj.featured %}<span class="card__star">★</span>{% endif %}
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">{{ proj.title }}</h3>
+          <p class="card__desc">{{ proj.description }}</p>
+          <div class="card__tags">
+            {% for t in proj.tags %}<span class="tag">{{ t }}</span>{% endfor %}
+          </div>
+        </div>
+        <div class="card__foot">
+          {% if proj.url %}
+          <a href="{{ proj.url }}" class="card__link">View on GitHub →</a>
+          {% else %}
+          <span class="card__link card__link--muted">Research project</span>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============ PUBLICATIONS ============ -->
+<section class="section section--alt" id="publications">
+  <div class="wrap">
+    <h2 class="section__title">Selected Publications &amp; Talks</h2>
+    <ul class="pubs">
+      {% for pub in site.data.publications %}
+      <li class="pub">
+        <div class="pub__thumb pub__thumb--{{ pub.tint | default: 'slate' }}">
+          {% if pub.image %}<img src="{{ pub.image | relative_url }}" alt="">{% else %}<span>{{ pub.short }}</span>{% endif %}
+        </div>
+        <div class="pub__text">
+          <p class="pub__title">{% if pub.url %}<a href="{{ pub.url }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</p>
+          {% if pub.description %}<p class="pub__desc">{{ pub.description }}</p>{% endif %}
+          <p class="pub__meta">{{ pub.authors }} — <em>{{ pub.venue }}</em>{% if pub.year %}, {{ pub.year }}{% endif %}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section" id="experience">
+  <div class="wrap">
+    <h2 class="section__title">Experience</h2>
+    <div class="timeline">
+      {% for job in site.data.experience %}
+      <div class="tl">
+        <div class="tl__head">
+          <h3 class="tl__role">{{ job.role }}</h3>
+          <span class="tl__period">{{ job.period }}</span>
+        </div>
+        <p class="tl__org">{{ job.org }}</p>
+        <ul class="tl__points">
+          {% for pt in job.points %}<li>{{ pt }}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="wrap contact__inner">
+    <h2 class="contact__title section__title">Contact</h2>
+    <div class="contact__links">
+      <a class="btn btn--primary" href="mailto:{{ p.email }}">{{ p.email }}</a>
+      <a class="btn btn--ghost" href="{{ p.github_url }}">GitHub ↗</a>
+      {% if p.linkedin_url %}<a class="btn btn--ghost" href="{{ p.linkedin_url }}">LinkedIn ↗</a>{% endif %}
+      {% if p.scholar_url %}<a class="btn btn--ghost" href="{{ p.scholar_url }}">Scholar ↗</a>{% endif %}
+    </div>
+  </div>
+</section>
