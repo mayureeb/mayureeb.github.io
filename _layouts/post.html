@@ -11,3 +11,12 @@ layout: default
     <p class="postfull__back"><a href="{{ '/blog/' | relative_url }}">← All posts</a></p>
   </div>
 </article>
+
+<!-- LaTeX math (loads only on post pages) -->
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['$', '$']], displayMath: [['$$', '$$']] },
+    options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>

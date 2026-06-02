@@ -10,6 +10,9 @@ lang: en
 
 markdown: kramdown
 permalink: /blog/:title/
+kramdown:
+  math_engine: null        # let MathJax render $...$ / $$...$$
+  syntax_highlighter: rouge
 sass:
   style: compressed
 
