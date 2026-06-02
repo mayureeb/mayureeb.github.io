@@ -30,9 +30,3 @@
   description: "CLIP-based zero-shot classification and image–image retrieval."
   tags: [CLIP, Zero-shot]
   url: https://github.com/mayureeb/foundation-vision-playground
-
-- title: Head Pose Estimation
-  category: Computer vision
-  description: "Real-time head-pose estimation with TensorFlow and OpenCV."
-  tags: [OpenCV, TensorFlow]
-  url: https://github.com/mayureeb/headpose
