@@ -80,6 +80,9 @@
   figure_kind: Crossing-study geometry
   figure_caption: Reachability-certified choices in the synthetic crossing task. The vehicle positions are
     schematic; this is not a recorded rollout.
+  figure_teaser_file: human-models-teaser.svg
+  figure_teaser_alt: Schematic geometry of the synthetic perpendicular crossing, including the autonomous
+    and human vehicles and conflict bounds.
 - title: Evaluating Physical Probes for Task Decisions under Hidden Dynamics
   area: Physical AI
   status: Accepted
@@ -169,6 +172,7 @@
   figure_caption: Selected probe waveforms, design-world objective disagreement across 35 feasible
     waveforms, and fresh-world test results, reproduced from manuscript Figure 2a–c.
   figure_teaser_file: physical-probes-teaser.png
+  figure_teaser_alt: Actual task-selected and D-optimal diagnostic probe waveforms reproduced from the manuscript.
 - title: Learning Longitudinal Control Decisions for Autonomous Driving Under Conflicting Collision Risks
   area: Physical AI
   status: Accepted
@@ -424,6 +428,9 @@
   figure_caption: "Left: an illustrative spatial scene, not a dataset image. Right: reported
     relation-readout accuracies across 200 paired test scenes. This comparison does not establish a
     latent-computation advantage."
+  figure_teaser_file: spatial-reasoning-teaser.svg
+  figure_teaser_alt: Illustrative spatial scene showing object-coordinate and spatial-relation targets; not
+    a dataset image.
 - title: Auditing the Monitorability of Reasoning Models Under Quantization and Thinking Budgets
   area: Reasoning
   status: Submitted

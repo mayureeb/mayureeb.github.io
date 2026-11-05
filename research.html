@@ -8,7 +8,7 @@ title: Research
   <div class="filter-bar" data-filter-group="research" aria-label="Filter research"><button class="filter is-active" data-filter="all" aria-pressed="true">All</button><button class="filter" data-filter="Adaptation" aria-pressed="false">Adaptation</button><button class="filter" data-filter="Physical AI" aria-pressed="false">Physical AI</button><button class="filter" data-filter="Reasoning" aria-pressed="false">Reasoning</button><span class="filter-count" aria-live="polite">6 projects</span></div>
   <div class="research-list" id="research-list">{% for project in site.data.research %}{% assign teaser = project.figure_teaser_file | default: project.figure_file %}
     <article class="research-item research-preview" data-area="{{ project.area }}">
-      <div class="direction-figure"><img src="{{ '/assets/figures/' | append: teaser | relative_url }}?v={{ site.time | date: '%s' }}" alt="{{ project.figure_alt }}" loading="lazy"></div>
+      <div class="direction-figure"><img src="{{ '/assets/figures/' | append: teaser | relative_url }}?v={{ site.time | date: '%s' }}" alt="{{ project.figure_teaser_alt | default: project.figure_alt }}" loading="lazy"></div>
       <div><h2><a href="{{ '/research/' | append: project.slug | append: '/' | relative_url }}">{{ project.title }}</a></h2><p class="research-summary">{{ project.summary }}</p><p class="research-venue">{{ project.venue }} <span class="status{% if project.status == 'Accepted' %} status--accepted{% endif %}">{{ project.status }}</span></p><a class="project-read" href="{{ '/research/' | append: project.slug | append: '/' | relative_url }}">Project overview →</a></div>
     </article>
   {% endfor %}</div>
