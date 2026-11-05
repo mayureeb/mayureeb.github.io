@@ -17,7 +17,7 @@ Mayuree Binjolkar’s research website, built with Jekyll and deployed on GitHub
 - `_data/research.yml`: research formulations, contributions, control conditions, experiment protocols, results tables, scope, and publication status.
 - `_data/publications.yml`: additional publications and presentations.
 - `_data/projects.yml`: public software repositories.
-- `assets/figures/`: conceptual study diagrams, distinguished from empirical results.
+- `assets/figures/`: research-specific study geometry, manuscript graphics, and plots of reported results; illustrative scenes are labeled explicitly.
 
 The research collection is configured in `_config.yml`. Shared navigation is in `_layouts/default.html`, styles in `assets/css/main.css`, and menu/filter behavior in `assets/js/main.js`. All projects remain accessible without JavaScript.
 

@@ -12,6 +12,7 @@ layout: default
       <p class="research-keywords">{% for tag in project.tags %}{{ tag }}{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
     </header>
     <p class="project-contribution">{{ project.contribution }}</p>
+    <figure class="project-figure"><a class="figure-expand" href="{{ '/assets/figures/' | append: project.figure_file | relative_url }}?v={{ site.time | date: '%s' }}" target="_blank" rel="noopener" aria-label="Open full-size research figure"><img src="{{ '/assets/figures/' | append: project.figure_file | relative_url }}?v={{ site.time | date: '%s' }}" alt="{{ project.figure_alt }}"></a><figcaption><span>{{ project.figure_kind }}.</span> {{ project.figure_caption }} <a class="figure-fullsize" href="{{ '/assets/figures/' | append: project.figure_file | relative_url }}?v={{ site.time | date: '%s' }}" target="_blank" rel="noopener">View full-size ↗</a></figcaption></figure>
     <nav class="project-nav" aria-label="On this page"><a href="#problem">Problem</a><a href="#methods">Methods</a><a href="#results">Results</a><a href="#scope">Scope</a></nav>
     <section id="problem"><h2>Problem and formulation</h2>{% for paragraph in project.overview %}<p>{{ paragraph }}</p>{% endfor %}
       {% if project.equation %}<div class="research-equation"><p>{{ project.equation.expression | escape }}</p><p>{{ project.equation.description }}</p></div>{% endif %}
@@ -19,7 +20,6 @@ layout: default
     <section id="methods"><h2>Methods and experimental design</h2>
       <dl class="study-protocol">{% for item in project.protocol %}<div><dt>{{ item.label }}</dt><dd>{{ item.value }}</dd></div>{% endfor %}</dl>
       {% for method in project.method_sections %}<h3>{{ method.heading }}</h3><p>{{ method.text }}</p>{% endfor %}
-      <details class="study-schematic"><summary>View experimental schematic</summary><figure class="project-figure"><img src="{{ '/assets/figures/' | append: project.figure | append: '.svg' | relative_url }}?v={{ site.time | date: '%s' }}" alt="{{ project.figure_alt }}" width="560" height="300"><figcaption>Conceptual schematic; empirical findings and comparison conditions are reported below.</figcaption></figure></details>
     </section>
     <section id="results"><h2>Results</h2>
       {% if project.result_table %}<div class="results-table-wrap"><table class="results-table"><thead><tr>{% for cell in project.result_table.headers %}<th scope="col">{{ cell }}</th>{% endfor %}</tr></thead><tbody>{% for row in project.result_table.rows %}<tr>{% for cell in row %}{% if forloop.first %}<th scope="row">{{ cell }}</th>{% else %}<td>{{ cell }}</td>{% endif %}{% endfor %}</tr>{% endfor %}</tbody></table></div>{% endif %}

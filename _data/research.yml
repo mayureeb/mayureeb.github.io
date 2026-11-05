@@ -17,7 +17,8 @@
   slug: human-models
   short_title: Human models and policy adaptation
   figure: human-models
-  figure_alt: A human model informs a certified policy family; decisions are compared after independent refitting.
+  figure_alt: Synthetic perpendicular-crossing geometry with autonomous and human vehicles, conflict
+    bounds, and go-first/yield choices.
   question: When does more information about a human improve the decisions of an AI agent?
   interpretation: The value of information and the value of taking an action to obtain it are different
     quantities. Independent refitting tests whether a result depends on a particular trained controller.
@@ -75,6 +76,10 @@
     bounds; they do not establish eventual crossing or validate a law of real driver behavior. Fresh
     evaluation of one fitted controller and robustness to independent refitting are reported as distinct
     questions.
+  figure_file: human-models.svg
+  figure_kind: Crossing-study geometry
+  figure_caption: Reachability-certified choices in the synthetic crossing task. The vehicle positions are
+    schematic; this is not a recorded rollout.
 - title: Evaluating Physical Probes for Task Decisions under Hidden Dynamics
   area: Physical AI
   status: Accepted
@@ -93,7 +98,8 @@
   slug: physical-probes
   short_title: Physical probing under hidden dynamics
   figure: physical-probes
-  figure_alt: Physical probes generate observations used to estimate hidden state and select a task action.
+  figure_alt: Actual selected probe waveforms, design-world parameter-information versus completion
+    scatter, and fresh-world outcomes for selected and fixed probes.
   question: Which physical observations help an agent choose what to do next?
   interpretation: "Comparing estimated-state and true-state execution helps locate a bottleneck: a planner
     can succeed with the right state while the full sensing-to-action system still fails."
@@ -158,6 +164,11 @@
     global identifiability guarantee. The empirical residual does not prove that every estimator must
     fail or that all remaining information is usable. TartanDrive histories are observational and do not
     establish the counterfactual value of a new active probe.
+  figure_file: physical-probes.png
+  figure_kind: Manuscript figure
+  figure_caption: Selected probe waveforms, design-world objective disagreement across 35 feasible
+    waveforms, and fresh-world test results, reproduced from manuscript Figure 2a–c.
+  figure_teaser_file: physical-probes-teaser.png
 - title: Learning Longitudinal Control Decisions for Autonomous Driving Under Conflicting Collision Risks
   area: Physical AI
   status: Accepted
@@ -175,8 +186,8 @@
   slug: longitudinal-control
   short_title: Visual learning for driving decisions
   figure: longitudinal-control
-  figure_alt: Camera and ego-motion histories inform action values, which are used to select a longitudinal
-    control and evaluate driving outcomes.
+  figure_alt: Contact rate versus contact-zeroed progress for maintaining speed, coasting, direct learning,
+    and survival-coupled learning.
   question: How should a vehicle choose a control when reducing one collision risk can increase another?
   interpretation: Improving a prediction metric does not necessarily improve the policy that uses it.
     Matched objectives and driving-outcome evaluation make that distinction observable.
@@ -243,6 +254,10 @@
     learning visual action values in this setting; the matched comparisons do not establish an additional
     driving benefit from survival coupling. Contact-zeroed progress assigns zero to a rollout after any
     contact and should be read together with contact rate.
+  figure_file: longitudinal-control.svg
+  figure_kind: Reported driving outcomes
+  figure_caption: Aggregate CARLA results for 80 combined-scenario test configurations. Progress is scored
+    as zero after contact. The direct and survival-coupled outcomes nearly coincide.
 - title: "Same Threshold, Different Guard: Temporal Force Measurement in Simulated Manipulation"
   area: Physical AI
   status: Submitted
@@ -262,8 +277,8 @@
   slug: temporal-force
   short_title: Temporal force measurement in manipulation
   figure: temporal-force
-  figure_alt: The same force signal is measured instantaneously or over a time window before a fixed guard
-    determines the response.
+  figure_alt: Heatmaps of retrieval counts, maximum raw force, and guard trips across force thresholds and
+    averaging windows.
   question: Can the way a robot measures force change its behavior even when the policy and threshold stay fixed?
   interpretation: A measurement convention is part of the executed system. Comparisons across simulators
     need to account for how and when the guard receives its signal.
@@ -327,6 +342,10 @@
     are not tested. Higher retrieval alone does not establish lower force exposure or faster detection.
     Engine-dependent results are reported alongside the measurement definition, timing, and raw force
     diagnostics.
+  figure_file: temporal-force.svg
+  figure_kind: Reported sensitivity analysis
+  figure_caption: "Replotted from manuscript Figure 3: the same 128 fresh Bullet worlds at every setting.
+    Cell colors encode magnitude; larger force is not a better outcome."
 - title: Answer-Controlled Probing of Spatial Information in Latent Visual Reasoning
   area: Reasoning
   status: Accepted
@@ -344,8 +363,8 @@
   slug: spatial-reasoning
   short_title: Spatial information in latent reasoning
   figure: spatial-reasoning
-  figure_alt: Spatial relation probes of hidden representations are compared with answer and confidence
-    controls under answer-preserving scene edits.
+  figure_alt: An illustrative coordinate-and-relation scene beside reported internal-state and
+    answer-confidence-control readout accuracies.
   question: What can spatial information in hidden representations tell us about a model’s reasoning?
   interpretation: Recovering information from a representation is different from showing that the model
     used it to reason. Input and answer controls help delimit the claim.
@@ -400,6 +419,11 @@
     causal role for that information in answer generation, or a consistent advantage of latent reasoning
     over prompt-state and visual-encoder baselines. The 94.24% comparison is specific to the tested
     relation-readout task.
+  figure_file: spatial-reasoning.svg
+  figure_kind: Spatial targets and reported readouts
+  figure_caption: "Left: an illustrative spatial scene, not a dataset image. Right: reported
+    relation-readout accuracies across 200 paired test scenes. This comparison does not establish a
+    latent-computation advantage."
 - title: Auditing the Monitorability of Reasoning Models Under Quantization and Thinking Budgets
   area: Reasoning
   status: Submitted
@@ -418,8 +442,8 @@
   slug: reasoning-monitorability
   short_title: Monitorability under inference constraints
   figure: reasoning-monitorability
-  figure_alt: Precision and thinking-budget interventions are evaluated through generated responses,
-    independent judging, and human adjudication.
+  figure_alt: Quantized-model capability across four precisions, beside the INT4-AWQ versus BF16 benign
+    over-refusal risk ratio and confidence interval.
   question: How do precision and thinking-budget constraints affect the evaluation of reasoning models?
   interpretation: Inference configurations need to be evaluated alongside the model. Controlled precision
     and token-budget comparisons support analysis of behavior and monitorability.
@@ -470,3 +494,8 @@
     unknown calibration data. The 2-bit comparison also changes inference engine, so it does not isolate
     a pure precision effect. The 60-trace human review is limited for small effects; the proposed
     compositional shift at INT4 remains suggestive.
+  figure_file: reasoning-monitorability.svg
+  figure_kind: Reported audit results
+  figure_caption: "Left: reported MATH-subset accuracy at 8,192 thinking tokens. Right: benign over-refusal
+    pooled across budgets, with a reported 95% risk-ratio interval. The 2-bit checkpoint also changes
+    serving engine."
