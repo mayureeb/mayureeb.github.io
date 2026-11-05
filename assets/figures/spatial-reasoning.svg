@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" role="img" aria-label="Spatial representation probes and answer controls">
+<title>Spatial representation probes and answer controls</title>
+<defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7" fill="none" stroke="#7a94a6" stroke-width="1.2"/></marker></defs>
+<rect width="560" height="300" fill="#f4f7f9"/>
+<g font-family="Arial,sans-serif" fill="#314f65" font-size="14">
+<rect x="24" y="51" width="150" height="55" rx="4" fill="#fff" stroke="#bdceda"/>
+<text x="99.0" y="83.5" text-anchor="middle" font-size="14" fill="#314f65">Hidden states</text>
+<rect x="205" y="51" width="150" height="55" rx="4" fill="#e1ecf3" stroke="#bdceda"/>
+<text x="280.0" y="83.5" text-anchor="middle" font-size="14" fill="#314f65">Spatial probe</text>
+<rect x="386" y="51" width="150" height="55" rx="4" fill="#fff" stroke="#bdceda"/>
+<text x="461.0" y="83.5" text-anchor="middle" font-size="14" fill="#314f65">Relation prediction</text>
+<path d="M174 79H198" fill="none" stroke="#7a94a6" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M355 79H379" fill="none" stroke="#7a94a6" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="24" y="163" width="150" height="61" rx="4" fill="#fff" stroke="#bdceda"/>
+<text x="99.0" y="189.5" text-anchor="middle" font-size="14" fill="#314f65">Answer +</text>
+<text x="99.0" y="207.5" text-anchor="middle" font-size="14" fill="#314f65">confidence</text>
+<rect x="205" y="163" width="150" height="61" rx="4" fill="#fff" stroke="#bdceda"/>
+<text x="280.0" y="198.5" text-anchor="middle" font-size="14" fill="#314f65">Control model</text>
+<rect x="386" y="163" width="150" height="61" rx="4" fill="#e1ecf3" stroke="#bdceda"/>
+<text x="461.0" y="198.5" text-anchor="middle" font-size="14" fill="#314f65">Compare</text>
+<path d="M174 194H198" fill="none" stroke="#7a94a6" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M355 194H379" fill="none" stroke="#7a94a6" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M461 106V156" fill="none" stroke="#7a94a6" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="280" y="271" text-anchor="middle" font-size="14" fill="#314f65">Answer-preserving scene edits hold output cues fixed</text>
+</g></svg>

@@ -1,0 +1,12 @@
+---
+layout: default
+permalink: /publications/
+title: Publications
+---
+<section class="section page-intro"><div class="wrap"><h1>Publications and presentations</h1><p>Research papers, manuscripts, and conference presentations. Submission and acceptance status are indicated for recent work.</p></div></section>
+<section class="section publication-section"><div class="wrap"><div class="section-heading"><h2>Recent AI research</h2></div><div class="publication-list">
+{% for project in site.data.research %}<article class="publication"><div><h3><a href="{{ '/research/' | append: project.slug | append: '/' | relative_url }}">{{ project.title }}</a></h3><p class="publication__venue">{{ project.venue }} · {{ project.status }}</p></div></article>{% endfor %}
+</div></div></section>
+<section class="section publication-section"><div class="wrap"><div class="section-heading"><h2>Additional publications and presentations</h2></div><div class="publication-list">
+{% for pub in site.data.publications %}<article class="publication"><div class="publication__year">{{ pub.year }}</div><div><h3>{% if pub.url %}<a href="{{ pub.url }}">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h3><p class="publication__authors">{{ pub.authors | replace: "Mayuree Binjolkar", "<strong>Mayuree Binjolkar</strong>" }}</p><p class="publication__venue">{{ pub.venue }}{% unless pub.type == "Workshop" or pub.type == "Proceedings" %} · {{ pub.type }}{% endunless %}{% if pub.status %} · {{ pub.status }}{% endif %}</p></div></article>{% endfor %}
+</div></div></section>

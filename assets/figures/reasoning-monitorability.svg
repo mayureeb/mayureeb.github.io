@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" role="img" aria-label="Reasoning evaluation under precision and token-budget constraints">
+<title>Reasoning evaluation under precision and token-budget constraints</title>
+<defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7" fill="none" stroke="#7a94a6" stroke-width="1.2"/></marker></defs>
+<rect width="560" height="300" fill="#f4f7f9"/>
+<g font-family="Arial,sans-serif" fill="#314f65" font-size="14">
+<rect x="79" y="32" width="180" height="50" rx="4" fill="#e1ecf3" stroke="#bdceda"/>
+<text x="169.0" y="62.0" text-anchor="middle" font-size="14" fill="#314f65">Weight precision</text>
+<rect x="300" y="32" width="180" height="50" rx="4" fill="#e1ecf3" stroke="#bdceda"/>
+<text x="390.0" y="62.0" text-anchor="middle" font-size="14" fill="#314f65">Thinking budget</text>
+<path d="M169 82V115H99V157" fill="none" stroke="#7a94a6" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M390 82V115H99V157" fill="none" stroke="#7a94a6" stroke-width="1.4" marker-end="url(#arrow)"/>
+<rect x="24" y="164" width="150" height="64" rx="4" fill="#fff" stroke="#bdceda"/>
+<text x="99.0" y="192.0" text-anchor="middle" font-size="14" fill="#314f65">Model</text>
+<text x="99.0" y="210.0" text-anchor="middle" font-size="14" fill="#314f65">generations</text>
+<rect x="205" y="164" width="150" height="64" rx="4" fill="#fff" stroke="#bdceda"/>
+<text x="280.0" y="192.0" text-anchor="middle" font-size="14" fill="#314f65">Two independent</text>
+<text x="280.0" y="210.0" text-anchor="middle" font-size="14" fill="#314f65">LLM judges</text>
+<rect x="386" y="164" width="150" height="64" rx="4" fill="#fff" stroke="#bdceda"/>
+<text x="461.0" y="192.0" text-anchor="middle" font-size="14" fill="#314f65">Human</text>
+<text x="461.0" y="210.0" text-anchor="middle" font-size="14" fill="#314f65">adjudication</text>
+<path d="M174 196H198" fill="none" stroke="#7a94a6" stroke-width="1.4" marker-end="url(#arrow)"/>
+<path d="M355 196H379" fill="none" stroke="#7a94a6" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="280" y="272" text-anchor="middle" font-size="14" fill="#314f65">Controlled inference comparisons and statistical analysis</text>
+</g></svg>

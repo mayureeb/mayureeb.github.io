@@ -28,3 +28,8 @@ exclude:
   - vendor
   - .github
   - work
+
+collections:
+  research:
+    output: true
+    permalink: /research/:name/

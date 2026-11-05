@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{% assign project = site.data.research | where: "slug", page.project | first %}
+<article class="research-page">
+  <div class="wrap wrap--narrow">
+    <a class="back-link" href="{{ '/research/' | relative_url }}">← Research</a>
+    <header class="research-page__header"><p class="research-area">{{ project.area }}</p><h1>{{ project.short_title }}</h1><p class="research-venue">{{ project.venue }} <span class="status{% if project.status == 'Accepted' %} status--accepted{% endif %}">{{ project.status }}</span></p></header>
+    <p class="project-question">{{ project.question }}</p>
+    <figure class="project-figure"><img src="{{ '/assets/figures/' | append: project.figure | append: '.svg' | relative_url }}" alt="{{ project.figure_alt }}" width="560" height="300"><figcaption>Conceptual overview of the experimental comparison.</figcaption></figure>
+    <section><h2>Study</h2><p>{{ project.summary }}</p><p>{{ project.detail }}</p></section>
+    <section><h2>Finding</h2><p>{{ project.result }}</p></section>
+    <section><h2>Interpretation</h2><p>{{ project.interpretation }}</p></section>
+    <aside class="paper-reference"><h2>Manuscript</h2><p>{{ project.title }}</p><p class="research-venue">{{ project.venue }} · {{ project.status }}</p></aside>
+    <a class="back-link" href="{{ '/research/' | relative_url }}">← All research projects</a>
+  </div>
+</article>

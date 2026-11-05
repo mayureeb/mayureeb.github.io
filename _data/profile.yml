@@ -1,10 +1,9 @@
 name: Mayuree Binjolkar
 role: Founding Research Scientist
 intro: >-
-  I study reinforcement learning, LLM and VLM post-training, and long-horizon agentic systems.
-  My work connects model adaptation, multimodal perception, and the evaluation of sequential
-  decisions in physical environments. At Trapezoid AI, I lead applied ML research from problem
-  formulation through production deployment.
+  I study how AI systems use information, learn from experience, and make sequential decisions
+  in physical environments. My work spans reinforcement learning, multimodal models, and
+  agentic systems.
 email: mbinjolkar@gmail.com
 github: mayureeb
 github_url: https://github.com/mayureeb

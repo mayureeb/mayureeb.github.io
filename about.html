@@ -1,0 +1,16 @@
+---
+layout: default
+permalink: /about/
+title: About
+---
+{% assign p = site.data.profile %}
+<section class="section page-intro"><div class="wrap wrap--narrow"><h1>About</h1><p>I am an AI researcher working across reinforcement learning, multimodal learning, and sequential decision-making. I am currently a Founding Research Scientist at Trapezoid AI, where I lead applied ML research on model adaptation, perception, and agentic systems.</p></div></section>
+<section class="section biography"><div class="wrap wrap--narrow">
+  <h2>Research background</h2>
+  <p>My Ph.D. research at the University of Washington focused on how people and autonomous systems make decisions over time. I developed offline and inverse reinforcement learning models for driver behavior and adaptive decisions, using VR simulations and human-subject experiments to study driver–automation interactions under distraction and neurocognitive variability.</p>
+  <p>This work brought together machine learning, simulation, and behavioral research through collaborations with Toyota CSRC, DENSO, and NIH-funded studies. My subsequent applied ML work has included multimodal safety systems, healthcare, and production agentic perception.</p>
+  <h2>Research communication and service</h2>
+  <p>I won first place in the University of Washington’s 2023 Three Minute Thesis competition, presenting research on sequential decision-making in driving. <a href="https://grad.uw.edu/mayuree-binjolkar/">Read the UW profile.</a></p>
+  <p>I am a selected member of the Transportation Research Board’s ACP-70 committee. My recognitions include the UW Diversity, Equity & Inclusion Award (2024), a Grace Hopper Scholarship (2021), and a Data Science for Social Good fellowship (2017).</p>
+  <h2>Contact</h2><p>For research collaborations and related inquiries: <a href="mailto:{{ p.email }}">{{ p.email }}</a>.</p><div class="profile-links"><a href="{{ p.github_url }}">GitHub</a><a href="{{ p.linkedin_url }}">LinkedIn</a><a href="{{ p.substack_url }}">Substack</a></div>
+</div></section>
