@@ -3,13 +3,13 @@ layout: default
 permalink: /research/
 title: Research
 ---
-<section class="section page-intro"><div class="wrap"><h1>Research</h1><p>I study the relationship between what an AI system knows, how it learns, and the decisions it makes. The projects below use controlled experiments in driving, manipulation, and multimodal reasoning to examine that relationship.</p></div></section>
+<section class="section page-intro"><div class="wrap"><h1>Research</h1><p>My research spans offline and inverse reinforcement learning, decision-focused evaluation, hidden-dynamics inference, multimodal representation analysis, and reasoning-model audits. The projects below describe the formulations, model and simulator choices, controlled comparisons, empirical results, and limits of each study.</p></div></section>
 <section class="section research-catalog"><div class="wrap">
   <div class="filter-bar" data-filter-group="research" aria-label="Filter research"><button class="filter is-active" data-filter="all" aria-pressed="true">All</button><button class="filter" data-filter="Adaptation" aria-pressed="false">Adaptation</button><button class="filter" data-filter="Physical AI" aria-pressed="false">Physical AI</button><button class="filter" data-filter="Reasoning" aria-pressed="false">Reasoning</button><span class="filter-count" aria-live="polite">6 projects</span></div>
   <div class="research-list" id="research-list">{% for project in site.data.research %}
     <article class="research-item research-preview" data-area="{{ project.area }}">
       <div class="direction-figure"><img src="{{ '/assets/figures/' | append: project.figure | append: '.svg' | relative_url }}?v={{ site.time | date: '%s' }}" alt="" width="560" height="300" loading="lazy"></div>
-      <div><h2><a href="{{ '/research/' | append: project.slug | append: '/' | relative_url }}">{{ project.short_title }}</a></h2><p class="research-question">{{ project.question }}</p><p class="research-summary">{{ project.summary }}</p><p class="research-venue">{{ project.venue }} <span class="status{% if project.status == 'Accepted' %} status--accepted{% endif %}">{{ project.status }}</span></p><a class="project-read" href="{{ '/research/' | append: project.slug | append: '/' | relative_url }}">Project overview →</a></div>
+      <div><h2><a href="{{ '/research/' | append: project.slug | append: '/' | relative_url }}">{{ project.title }}</a></h2><p class="research-summary">{{ project.summary }}</p><p class="research-venue">{{ project.venue }} <span class="status{% if project.status == 'Accepted' %} status--accepted{% endif %}">{{ project.status }}</span></p><a class="project-read" href="{{ '/research/' | append: project.slug | append: '/' | relative_url }}">Project overview →</a></div>
     </article>
   {% endfor %}</div>
 </div></section>

@@ -14,7 +14,7 @@ Mayuree Binjolkar’s research website, built with Jekyll and deployed on GitHub
 ## Editing content
 
 - `_data/profile.yml`: contact links and photo.
-- `_data/research.yml`: research questions, methods, findings, interpretation, and publication status.
+- `_data/research.yml`: research formulations, contributions, control conditions, experiment protocols, results tables, scope, and publication status.
 - `_data/publications.yml`: additional publications and presentations.
 - `_data/projects.yml`: public software repositories.
 - `assets/figures/`: conceptual study diagrams, distinguished from empirical results.

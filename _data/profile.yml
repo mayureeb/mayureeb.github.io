@@ -1,9 +1,9 @@
 name: Mayuree Binjolkar
 role: Founding Research Scientist
 intro: >-
-  I study how AI systems use information, learn from experience, and make sequential decisions
-  in physical environments. My work spans reinforcement learning, multimodal models, and
-  agentic systems.
+  I work on reinforcement learning, LLM and VLM post-training, and multimodal reasoning for agentic
+  and physical AI systems. My research connects offline and inverse RL, learned dynamics,
+  representation analysis, and controlled evaluation of sequential decision-making.
 email: mbinjolkar@gmail.com
 github: mayureeb
 github_url: https://github.com/mayureeb

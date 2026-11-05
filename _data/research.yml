@@ -2,10 +2,11 @@
   area: Adaptation
   status: Submitted
   venue: ACM/IEEE International Conference on Human-Robot Interaction (HRI) 2027
-  summary: A controlled vehicle-crossing study separating the value of human-driver information from
-    the physical effects of actions used to gather it.
-  result: Information improved decisions across eight independent refits, but the complete probing
-    strategy underperformed no probing.
+  summary: An evaluation framework for the decision value of human models in adaptive interaction,
+    combining reachability-certified policy families, matched intervention controls, decision-level
+    attribution, and independent controller refitting.
+  result: Information improved decisions across eight independent refits, but the complete probing strategy
+    underperformed no probing.
   detail: Exact reachability certificates constrained policy choices. Matched controls and 496
     state–controller comparisons identified decision improvements that persisted or reversed after
     retraining.
@@ -16,22 +17,75 @@
   slug: human-models
   short_title: Human models and policy adaptation
   figure: human-models
-  figure_alt: A human model informs a certified policy family; decisions are compared after
-    independent refitting.
+  figure_alt: A human model informs a certified policy family; decisions are compared after independent refitting.
   question: When does more information about a human improve the decisions of an AI agent?
-  interpretation: The value of information and the value of taking an action to obtain it are
-    different quantities. Independent refitting tests whether a result depends on a particular
-    trained controller.
+  interpretation: The value of information and the value of taking an action to obtain it are different
+    quantities. Independent refitting tests whether a result depends on a particular trained controller.
+  contribution: I developed a controlled evaluation of human-model benefit that separates the effect of a
+    probing action, the benefit of posterior information use, and variation introduced when a controller
+    is fitted again.
+  overview:
+    - The study considers a synthetic perpendicular crossing between an autonomous vehicle and a human
+      model with a fixed task preference and evolving expectations. The vehicle can execute a one-second
+      braking probe, observe the response, and select a certified go-first or yield continuation. A
+      performance improvement can arise from changing the interaction, from using the response to infer
+      the human label, or from the particular controller that was learned.
+    - Reachability certificates define admissible policies independently of modeled human-response
+      probabilities. The evaluation covers all 31 constructed states that admit both original crossing
+      orders; richer certified families add yield caps and constant-acceleration go profiles. This keeps
+      the feasible decision set explicit when assessing whether a human model changes the selected
+      action.
+  method_sections:
+    - heading: Matched intervention and posterior-use controls
+      text: "Three complete strategies are compared from the same starting condition: no probe; a fixed probe
+        followed by a prior-retaining selector; and the same probe followed by a posterior-updating
+        selector. The two probing controllers share the physical intervention and retain physical-state
+        feedback. Their difference isolates posterior use, while the prior-retaining versus no-probe
+        comparison measures the intervention effect, including its acquisition cost."
+    - heading: Independent fitting and decision-level attribution
+      text: Eight disjoint fitting blocks are frozen before evaluation on a shared fresh seed panel. Paired
+        contrasts and crossed resampling over fitting blocks and evaluation seeds separate fresh
+        evaluation from relearning. Reconstruction of 496 state–controller gains across two ensembles
+        identifies continuation choices that recur, disappear, or reverse after refitting. A crossed
+        controller/world comparison also varies the modeled human expectation dynamics.
+  protocol:
+    - label: Evaluation states
+      value: 31 eligible crossing states
+    - label: Independent fits
+      value: 8 per ensemble
+    - label: Attribution analysis
+      value: 496 state–controller comparisons
+    - label: Primary cost
+      value: Clearance time plus weighted human-vehicle effort
+  equation:
+    expression: J = T + λE
+    description: T is crossing-clearance time; E is the study’s speed-change-based effort term for the
+      modeled human vehicle. The coefficient expresses a designer-specified tradeoff.
+  findings:
+    - Posterior use yields a small positive mean gain in every one of the eight primary refitted
+      controllers. Nevertheless, the complete imposed probing strategy increases the combined
+      clearance-time and effort cost by approximately 2.07 units relative to no probing. The information
+      benefit survives relearning, but does not recover the full cost of acquiring it.
+    - At a state selected from earlier exploration, positive net probing gain coexists with unresolved
+      posterior-use benefit. In the crossed expectation-dynamics comparison, approximately 85% of the
+      initial advantage of matching the updating world is already present without posterior reweighting.
+      These comparisons show why an aggregate gain alone cannot identify an inference benefit.
+  scope: The conclusions concern the specified synthetic human dynamics, objectives, and certified policy
+    families. The certificates establish sufficient collision-avoidance conditions under the modeled
+    bounds; they do not establish eventual crossing or validate a law of real driver behavior. Fresh
+    evaluation of one fitted controller and robustness to independent refitting are reported as distinct
+    questions.
 - title: Evaluating Physical Probes for Task Decisions under Hidden Dynamics
   area: Physical AI
   status: Accepted
   venue: PhysWorldAI Workshop · NeurIPS 2026
-  summary: A MuJoCo/MJX and JAX protocol separating sensing, state-estimation, and planning failures
-    under randomized physical dynamics.
-  result: Approximately 30% task completion with estimated state versus 100% with true state located
-    the main failure before planning.
-  detail: Independently seeded 2,048-world studies and 35 probe waveforms tested how physical
-    observations support downstream task decisions.
+  summary: A decision-centered MuJoCo/MJX and JAX evaluation of hidden dynamics, using successful-action
+    sets, finite-pool decision-conflict certificates, estimator/planner interventions, and a locked
+    search over feasible diagnostic waveforms.
+  result: Approximately 30% task completion with estimated state versus 100% with true state located the
+    main failure before planning.
+  detail: Independently seeded 2,048-world studies and 35 probe waveforms tested how physical observations
+    support downstream task decisions.
   tags:
     - MuJoCo/MJX
     - JAX
@@ -41,14 +95,75 @@
   figure: physical-probes
   figure_alt: Physical probes generate observations used to estimate hidden state and select a task action.
   question: Which physical observations help an agent choose what to do next?
-  interpretation: "Comparing estimated-state and true-state execution helps locate a bottleneck: a
-    planner can succeed with the right state while the full sensing-to-action system still fails."
+  interpretation: "Comparing estimated-state and true-state execution helps locate a bottleneck: a planner
+    can succeed with the right state while the full sensing-to-action system still fails."
+  contribution: I developed an evaluation protocol that separates physical task feasibility, evidence
+    available in a sensor trace, state-estimation error, and downstream planning error, then tests
+    whether a learned probing policy is warranted by the remaining gap.
+  overview:
+    - The controlled task randomizes mass, Coulomb friction, damping, actuator gain, and delayed
+      resistance. A fixture executes a diagnostic speed profile while force and velocity are observed,
+      then launches a body toward a goal using a selected release-speed command. Completion requires
+      stopping within 0.06 m of the target. Successful release-action intervals are computed with
+      numerical search.
+    - Worlds are decision-conflicting when their successful-action sets do not overlap for the same goal.
+      Under the matched observation model, overlap between their noisy sensor-trace distributions yields
+      a two-point lower bound on decision error. A finite calibration/reference pool makes the
+      certificate computable and replayable, while preserving the distinction between information
+      availability and practical decoder performance.
+  method_sections:
+    - heading: Matched evidence and strong fixed controls
+      text: Probe comparisons match duration, peak target speed, observed channels, sampling schedule, and
+        physical work/path caps. Passive, signed fixed sweeps, randomized excitation, and D-optimal
+        multisine controls are evaluated with Ridge, ExtraTrees, random-feature regression,
+        nearest-neighbor decoding, and GRU models. Validation choices and test actions are frozen before
+        test outcomes are opened.
+    - heading: Interventions that localize the failure
+      text: Fresh studies feed the same estimated physical state to a learned action map and a numerical
+        planner, then give that planner the true state as an evaluator-only control. Additional
+        interventions test eightfold more training data, a decision-aware objective, observation budgets
+        up to 401 samples, and direct maximum-likelihood fitting through the known simulator. A locked
+        library search compares task-selected and parameter-information-selected probes across 35
+        feasible waveforms.
+    - heading: Transfer to real vehicle histories
+      text: A held-out-terrain TartanDrive 2.0 study predicts future body-frame velocity from
+        action-conditioned sensor histories. Linear ARX, instantaneous nonlinear baselines, temporal
+        models, and wrong-history controls assess what the history adds under terrain shift.
+  protocol:
+    - label: Simulation stack
+      value: MuJoCo / MJX and JAX
+    - label: Localization studies
+      value: Independently seeded 2,048-world panels
+    - label: Feasible waveform library
+      value: 35 probes
+    - label: Real-data test
+      value: Held-out TartanDrive 2.0 terrain
+  equation:
+    expression: "S(θ, g) = {u : L(θ, g, u) ≤ ε}"
+    description: S is the set of actions that complete goal g in physical world θ. Decision conflict means
+      that two same-goal worlds have disjoint successful-action sets.
+  findings:
+    - Numerical planning from estimated state remains near 30% completion, while the same planner with
+      true state completes every world. The tested increases in data, observation density, objective
+      alignment, and direct simulator fitting do not close this gap. The direct fit improves completion
+      by 1.27 percentage points, with a 95% interval of −0.44 to 2.98.
+    - Task-based waveform selection improves fresh-world completion by 3.71 percentage points over the
+      D-optimal multisine (95% interval 1.90–5.57), below the registered five-point requirement, and
+      remains 3.08 points behind the best fixed sweep. The finite-pool certificate distinguishes passive
+      from active sensing but does not meet its registered association with decoder error.
+    - On held-out real terrain, temporal history improves prediction by 23.53% over linear ARX and by
+      1.99% over instantaneous ExtraTrees. A useful history, an informative probe, and a successful
+      downstream estimator therefore need to be measured separately.
+  scope: The certificate is a finite-reference-pool bound under a matched observation/noise model, not a
+    global identifiability guarantee. The empirical residual does not prove that every estimator must
+    fail or that all remaining information is usable. TartanDrive histories are observational and do not
+    establish the counterfactual value of a new active probe.
 - title: Learning Longitudinal Control Decisions for Autonomous Driving Under Conflicting Collision Risks
   area: Physical AI
   status: Accepted
   venue: UrbanState Workshop · WACV 2027
-  summary: Learned visual action values from camera and ego-motion histories in CARLA, comparing
-    direct learning with survival-coupled objectives.
+  summary: Visual action-value learning for three-second driving decisions under conflicting front- and
+    rear-collision risks, with matched direct and survival-coupled objectives evaluated in CARLA.
   result: Contact fell from 78.75% with constant-speed control to 33.50%; progress rose from 4.95 m to
     14.83 m when contact runs were scored as zero.
   detail: Experiments covered 5,880 simulation branches and 242 training fits. Controlled comparisons
@@ -60,22 +175,86 @@
   slug: longitudinal-control
   short_title: Visual learning for driving decisions
   figure: longitudinal-control
-  figure_alt: Camera and ego-motion histories inform action values, which are used to select a
-    longitudinal control and evaluate driving outcomes.
+  figure_alt: Camera and ego-motion histories inform action values, which are used to select a longitudinal
+    control and evaluate driving outcomes.
   question: How should a vehicle choose a control when reducing one collision risk can increase another?
   interpretation: Improving a prediction metric does not necessarily improve the policy that uses it.
     Matched objectives and driving-outcome evaluation make that distinction observable.
+  contribution: I learned longitudinal control values from camera and ego-motion histories and designed
+    matched comparisons to test whether a survival-based factorization improves the driving decisions
+    made from those values.
+  overview:
+    - Braking can prevent contact with a leading vehicle while increasing the chance of being struck from
+      behind. The study learns values for a seven-control longitudinal action bank using camera and
+      ego-motion histories, evaluating both survival and forward progress under these conflicting risks.
+    - The comparison pairs direct action-value prediction with a coupled objective combining survival
+      probability and expected progress conditional on survival. Prediction heads and total value-loss
+      weight are matched. Progress is scored as zero after any contact, so the reported outcome jointly
+      reflects avoiding collision and making progress.
+  method_sections:
+    - heading: Representation learning and physically checked targets
+      text: Training combines representations from isolated leading-vehicle and following-vehicle scenarios.
+        Targets are checked against physical executions before the resulting decision rules are tested on
+        combined traffic configurations.
+    - heading: Matched decision evaluation
+      text: The evaluation spans 5,880 CARLA branches, 242 training fits, and 80 combined-scenario test
+        configurations. Controlled comparisons vary the risk-information formulation while holding the
+        value decoder fixed. Further experiments examine timing resolution and transfer of decisions
+        between traffic contexts with identical ego histories.
+  protocol:
+    - label: Simulator
+      value: CARLA
+    - label: Simulation branches
+      value: 5,880
+    - label: Training fits
+      value: "242"
+    - label: Decision horizon
+      value: 3 seconds; 7 candidate controls
+  findings:
+    - With camera-local contact rates, the survival-coupled model reaches 33.50% contact and 14.83 m mean
+      contact-zeroed progress on the combined-scenario tests. Maintaining speed gives 78.75% contact and
+      4.95 m progress; coasting gives 40.00% and 9.31 m.
+    - Matched direct learning reaches 33.75% contact and 14.81 m progress, placing it within 2.50
+      percentage points of the lowest hindsight contact rate in the seven-control bank. When both cameras
+      inform each contact rate and the value decoder is fixed, coupling improves prediction metrics
+      without improving driving outcomes.
+    - Finer timing does not demonstrate an additional benefit. Transferring decisions across traffic
+      contexts worsens outcomes despite identical ego histories, highlighting the importance of context
+      in evaluating learned action values.
+  result_table:
+    headers:
+      - Decision rule
+      - Contact rate
+      - Contact-zeroed progress
+    rows:
+      - - Maintain speed
+        - 78.75%
+        - 4.95 m
+      - - Coast
+        - 40.00%
+        - 9.31 m
+      - - Matched direct learning
+        - 33.75%
+        - 14.81 m
+      - - Survival-coupled learning
+        - 33.50%
+        - 14.83 m
+  scope: These are three-second simulation decisions within a fixed seven-control bank. The results support
+    learning visual action values in this setting; the matched comparisons do not establish an additional
+    driving benefit from survival coupling. Contact-zeroed progress assigns zero to a rollout after any
+    contact and should be read together with contact rate.
 - title: "Same Threshold, Different Guard: Temporal Force Measurement in Simulated Manipulation"
   area: Physical AI
   status: Submitted
   venue: IEEE International Conference on Robotics and Automation (ICRA) 2027
-  summary: Controlled manipulation experiments in Bullet, MuJoCo, and PhysX isolate how
-    force-measurement windows affect execution.
+  summary: A controlled cross-engine study of how force-measurement windows, history operators, and
+    guard-check timing alter simulated manipulation with dynamics, ordinary feedback, and guard response
+    held fixed.
   result: A prespecified 10 ms guard average increased retrieval from 0/128 to 99/128 in fresh Bullet
     worlds and from 77/128 to 121/128 in a matched PhysX panel.
-  detail: Dynamics, ordinary feedback, and guard response were held fixed. Sensitivity studies
-    examined timestep, force threshold, grip strength, and check timing. The evaluation is
-    restricted to simulation.
+  detail: Dynamics, ordinary feedback, and guard response were held fixed. Sensitivity studies examined
+    timestep, force threshold, grip strength, and check timing. The evaluation is restricted to
+    simulation.
   tags:
     - Robotic manipulation
     - Contact dynamics
@@ -83,22 +262,81 @@
   slug: temporal-force
   short_title: Temporal force measurement in manipulation
   figure: temporal-force
-  figure_alt: The same force signal is measured instantaneously or over a time window before a fixed
-    guard determines the response.
-  question: Can the way a robot measures force change its behavior even when the policy and threshold
-    stay fixed?
-  interpretation: A measurement convention is part of the executed system. Comparisons across
-    simulators need to account for how and when the guard receives its signal.
+  figure_alt: The same force signal is measured instantaneously or over a time window before a fixed guard
+    determines the response.
+  question: Can the way a robot measures force change its behavior even when the policy and threshold stay fixed?
+  interpretation: A measurement convention is part of the executed system. Comparisons across simulators
+    need to account for how and when the guard receives its signal.
+  contribution: I isolated the force-measurement interface of a fixed tactile retrieval controller, testing
+    how the same threshold produces different executed behavior when its input is accumulated and sampled
+    differently.
+  overview:
+    - The task uses opposing fingertips to retrieve targets with varied mass, friction, geometry, pose,
+      and contact offset. A force guard interrupts the motion at the first threshold crossing. Its input
+      can be the latest native force readback or normal impulse accumulated over a declared physical-time
+      window.
+    - The primary comparison changes only the guard input within Bullet and PhysX. The physics, ordinary
+      feedback, threshold, and latched stop/open response remain fixed. Analytic and mesh MuJoCo
+      configurations provide additional engine controls, with native contact laws retained.
+  method_sections:
+    - heading: Physical-time measurement and fixed execution
+      text: The primary 10 ms window was specified before evaluation on 128 previously unused Bullet worlds.
+        The main setup advances physics every 0.25 ms and updates the controller every 2 ms. Specifying a
+        window in seconds separates force accumulation from the solver timestep.
+    - heading: Cross-engine operators and sampling controls
+      text: Five distinct operators based on public framework conventions are compared, alongside four
+        timesteps, threshold sweeps, lower grip commands, and guard-check phase changes. Frozen settings,
+        per-world outcomes, and trace diagnostics track retrieval, guard trips, raw force exposure, and
+        detection delay.
+  protocol:
+    - label: Engines
+      value: Bullet, PhysX, analytic and mesh MuJoCo
+    - label: Primary guard window
+      value: 10 ms
+    - label: Bullet primary panel
+      value: 128 fresh worlds
+    - label: PhysX comparison
+      value: 128 matched, previously used worlds
+  equation:
+    expression: F̄W = JW / W
+    description: JW is accumulated normal impulse over a window of physical duration W. A fixed force
+      threshold τ is equivalent to comparing that impulse with τW.
+  findings:
+    - The prespecified 10 ms average increases retrieval from 0/128 to 99/128 in the fresh Bullet panel
+      and from 77/128 to 121/128 in the matched PhysX panel. These successful worlds coincide with those
+      retrieved without guard actuation.
+    - Across five public-framework-derived measurement operators, Bullet retrieval ranges from 56/128 to
+      127/128. The same operator comparison produces no retrieval differences in PhysX or either MuJoCo
+      configuration. Lower grip commands reduce operator disagreement.
+    - The Bullet gain persists across the tested higher thresholds and four timesteps, although retrieval
+      still depends on timestep. Changing guard-check timing changes which worlds trigger even when
+      aggregate trip counts are similar.
+  result_table:
+    headers:
+      - Panel
+      - Latest force readback
+      - 10 ms average
+    rows:
+      - - "Bullet: 128 fresh worlds"
+        - 0/128 retrieved
+        - 99/128 retrieved
+      - - "PhysX: 128 matched worlds"
+        - 77/128 retrieved
+        - 121/128 retrieved
+  scope: The intervention evaluates a fixed controller in simulation; learning effects and hardware safety
+    are not tested. Higher retrieval alone does not establish lower force exposure or faster detection.
+    Engine-dependent results are reported alongside the measurement definition, timing, and raw force
+    diagnostics.
 - title: Answer-Controlled Probing of Spatial Information in Latent Visual Reasoning
   area: Reasoning
   status: Accepted
   venue: Latent Visual Reasoning Workshop · WACV 2027
-  summary: Spatial representation probes across 200 scene pairs using answer-preserving edits,
-    pre-answer representations, and coordinate probes.
-  result: Internal spatial-relation predictions reached 94.24% accuracy versus 60.40% for the
-    strongest answer/confidence control.
-  detail: Prompt-state and visual-encoder baselines limited evidence that internal reasoning caused
-    the advantage. Experiments used frozen LatenRn-3B-RL representations.
+  summary: An answer-controlled representation audit of frozen LatenRn-3B-RL states using paired scene
+    edits, pre-answer references, spatial-relation readouts, and coordinate probes.
+  result: Internal spatial-relation predictions reached 94.24% accuracy versus 60.40% for the strongest
+    answer/confidence control.
+  detail: Prompt-state and visual-encoder baselines limited evidence that internal reasoning caused the
+    advantage. Experiments used frozen LatenRn-3B-RL representations.
   tags:
     - Representation probing
     - Spatial reasoning
@@ -106,21 +344,73 @@
   slug: spatial-reasoning
   short_title: Spatial information in latent reasoning
   figure: spatial-reasoning
-  figure_alt: Spatial relation probes of hidden representations are compared with answer and
-    confidence controls under answer-preserving scene edits.
+  figure_alt: Spatial relation probes of hidden representations are compared with answer and confidence
+    controls under answer-preserving scene edits.
   question: What can spatial information in hidden representations tell us about a model’s reasoning?
-  interpretation: Recovering information from a representation is different from showing that the
-    model used it to reason. Input and answer controls help delimit the claim.
+  interpretation: Recovering information from a representation is different from showing that the model
+    used it to reason. Input and answer controls help delimit the claim.
+  contribution: I designed controlled probes of spatial information in latent visual reasoning
+    representations, explicitly comparing what can be decoded from internal states with information
+    already available in answers, prompts, and visual-encoder features.
+  overview:
+    - The study asks whether spatial relationships and object coordinates are recoverable from a visual
+      reasoning model’s internal states, and what such recoverability establishes about latent
+      computation. The base model remains frozen; the learned components are readouts of its
+      representations.
+    - The evaluation uses 200 test scene pairs with answer-preserving edits. This creates a controlled
+      setting for examining spatial information beyond answer and confidence cues. Pre-answer
+      representations and pre-decoding references help distinguish information present before the final
+      answer from information explained by the output itself.
+  method_sections:
+    - heading: Spatial-relation and coordinate readouts
+      text: Probes target relational spatial information and object positions in frozen LatenRn-3B-RL
+        representations. Evaluating both relation predictions and coordinate readouts examines
+        complementary aspects of the representation instead of relying on final-answer accuracy alone.
+    - heading: Answer and representation controls
+      text: Readouts are compared with answer/confidence controls, prompt-state probes, and visual-encoder
+        baselines. These controls test whether a high-performing latent probe reflects information
+        specific to latent reasoning or information already accessible through simpler representations.
+  protocol:
+    - label: Base model
+      value: Frozen LatenRn-3B-RL
+    - label: Evaluation set
+      value: 200 paired test scenes
+    - label: Intervention
+      value: Answer-preserving scene edits
+    - label: Readouts
+      value: Spatial relations and object coordinates
+  findings:
+    - Spatial-relation readouts from internal states reach 94.24% accuracy, compared with 60.40% for the
+      strongest answer/confidence control. This establishes that the tested internal representations
+      contain spatial information beyond those output cues.
+    - Prompt-state and visual-encoder comparisons constrain the stronger claim that latent computation
+      itself provides an advantage. High probe accuracy is therefore reported together with the
+      representation controls, rather than treated as proof that the model uses the decoded information
+      to generate its answer.
+  result_table:
+    headers:
+      - Readout source
+      - Spatial-relation accuracy
+    rows:
+      - - Internal representations
+        - 94.24%
+      - - Strongest answer/confidence control
+        - 60.40%
+  scope: The experiment measures decodable information in frozen representations. It does not establish a
+    causal role for that information in answer generation, or a consistent advantage of latent reasoning
+    over prompt-state and visual-encoder baselines. The 94.24% comparison is specific to the tested
+    relation-readout task.
 - title: Auditing the Monitorability of Reasoning Models Under Quantization and Thinking Budgets
   area: Reasoning
-  status: Workshop research
+  status: Submitted
   venue: Efficient Reasoning Workshop · COLM 2026
-  summary: Audited reasoning-model faithfulness, safety, and monitorability across weight precision
-    and reasoning-token limits.
-  result: Built an evaluation harness over 9,840 generations with two LLM judges, blind human
-    adjudication, and statistical analysis.
-  detail: Multi-precision serving with vLLM and llama.cpp covered BF16, INT8, INT4-AWQ, and 2-bit
-    GGUF, with controlled reasoning-token limits and bootstrap/regression analysis.
+  summary: A 4 × 3 precision-by-thinking-budget audit of DeepSeek-R1-Distill-Qwen-7B, separating task
+    accuracy, harmful-prompt refusal, benign over-refusal, hint-verbalization faithfulness, and monitor
+    performance across 9,840 generations.
+  result: Built an evaluation harness over 9,840 generations with two LLM judges, blind human adjudication,
+    and statistical analysis.
+  detail: Multi-precision serving with vLLM and llama.cpp covered BF16, INT8, INT4-AWQ, and 2-bit GGUF,
+    with controlled reasoning-token limits and bootstrap/regression analysis.
   tags:
     - Evaluation harnesses
     - Quantization
@@ -131,5 +421,52 @@
   figure_alt: Precision and thinking-budget interventions are evaluated through generated responses,
     independent judging, and human adjudication.
   question: How do precision and thinking-budget constraints affect the evaluation of reasoning models?
-  interpretation: Inference configurations need to be evaluated alongside the model. Controlled
-    precision and token-budget comparisons support analysis of behavior and monitorability.
+  interpretation: Inference configurations need to be evaluated alongside the model. Controlled precision
+    and token-budget comparisons support analysis of behavior and monitorability.
+  contribution: I built a deployment-focused evaluation harness for quantized reasoning models and tested
+    whether capability, safety behavior, and reasoning-trace monitorability remain aligned under
+    precision and thinking-budget constraints.
+  overview:
+    - DeepSeek-R1-Distill-Qwen-7B is evaluated at BF16, INT8, INT4-AWQ, and community 2-bit GGUF, crossed
+      with 512-, 2,048-, and 8,192-token thinking budgets. BF16/INT8/INT4 use vLLM; the 2-bit
+      configuration uses llama.cpp. Budget-forced decoding truncates reasoning at the declared limit
+      before eliciting the answer.
+    - Each of the 12 configurations produces 820 generations. The batteries include paired clean/hinted
+      MMLU-Pro questions, 120 StrongREJECT harmful prompts, 250 XSTest benign prompts, and a 150-problem
+      MATH-500 subset. The design evaluates capability, harmful refusal, benign over-refusal, cue
+      acknowledgment, and monitor detection separately.
+  method_sections:
+    - heading: Faithfulness and monitor measurement
+      text: Two independent LLM judges, a deterministic lexical probe, and precision-blinded human review of 60
+        hint-induced answer flips distinguish explicit cue reliance, mention without credit, persona
+        absorption, and cue silence. A separate monitor sees the reasoning trace without being told that
+        the prompt contains a cue.
+    - heading: Paired inference and statistical analysis
+      text: Identical prompts support paired comparisons across deployment configurations. Bootstrap intervals,
+        logistic regression, exact proportion tests, and correction for eight primary pairwise
+        comparisons quantify effects. Judge disagreement and the think–answer acknowledgment gap are
+        retained as measured outcomes.
+  protocol:
+    - label: Model
+      value: DeepSeek-R1-Distill-Qwen-7B
+    - label: Design
+      value: 4 precisions × 3 thinking budgets
+    - label: Generations
+      value: 9,840 total; 820 per configuration
+    - label: Serving
+      value: vLLM and llama.cpp
+  findings:
+    - At the 8,192-token budget, accuracy on the MATH-500 subset is approximately 85% for BF16 and 79%
+      for 2-bit GGUF. The harmful-refusal comparison nevertheless degrades at 2 bits, demonstrating that
+      retained task accuracy does not by itself characterize the checkpoint’s safety behavior.
+    - "INT4-AWQ raises benign over-refusal from 21/750 (2.8%) under BF16 to 67/750 (8.9%): a risk ratio
+      of 3.19, with a 95% interval of 1.97–5.15. Harmful-prompt refusal and benign over-refusal exhibit
+      distinct failure patterns and are evaluated separately."
+    - The primary judge reports reduced hint reliance at INT4, while blinded review does not confirm a
+      decline in explicit reliance. Monitor false-positive rates stay at or below 2% across cells, with
+      recall ranging from 28% to 54%. These results expose sensitivity of faithfulness measurement to the
+      assessor as well as to the deployed model configuration.
+  scope: The audit covers one 7B model, one run per configuration, and community quantized checkpoints with
+    unknown calibration data. The 2-bit comparison also changes inference engine, so it does not isolate
+    a pure precision effect. The 60-trace human review is limited for small effects; the proposed
+    compositional shift at INT4 remains suggestive.
