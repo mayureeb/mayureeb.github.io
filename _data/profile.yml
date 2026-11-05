@@ -1,28 +1,16 @@
 name: Mayuree Binjolkar
-role: Founding AI Research Scientist
+role: Founding Research Scientist
 intro: >-
-  I'm a founding research scientist at Trapezoid AI, where I design and deploy multimodal systems for
-  real-world visual recognition — vision-language models, agentic validation, and multi-frame inference,
-  running in production. My research interests are in post-training, reinforcement learning, and AI
-  alignment: the reward signals, evaluations, and guardrails that make frontier models behave.
+  I study reinforcement learning, LLM and VLM post-training, and long-horizon agentic systems.
+  My work connects model adaptation, multimodal perception, and the evaluation of sequential
+  decisions in physical environments. At Trapezoid AI, I lead applied ML research from problem
+  formulation through production deployment.
 email: mbinjolkar@gmail.com
 github: mayureeb
 github_url: https://github.com/mayureeb
 photo: /images/hero.jpg
 linkedin_url: https://www.linkedin.com/in/mayuree-binjolkar/
 scholar_url:
-resume_url:
-# Writing platforms — fill these in and the buttons appear automatically.
+resume_url: /assets/files/Mayuree_Binjolkar_CV.pdf
 substack_url: https://may159.substack.com
 medium_url:
-
-# Senior-signal highlights shown as a strip under the hero.
-highlights:
-  - label: Now
-    value: Founding Research Scientist, Trapezoid AI
-  - label: Shipped
-    value: Production multimodal AI, live with paying customers
-  - label: Built from zero
-    value: First ML hire — stood up the ML practice
-  - label: Range
-    value: Autonomous systems · Healthcare · Consumer ML

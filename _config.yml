@@ -2,7 +2,7 @@ title: Mayuree Binjolkar
 tagline: Founding AI Research Scientist
 description: >-
   Mayuree Binjolkar — research scientist working on post-training, reinforcement learning,
-  and AI alignment. Founding research scientist at Trapezoid AI; PhD, University of Washington.
+  agentic systems, and physical AI. Founding research scientist at Trapezoid AI; PhD research at the University of Washington.
 url: "https://mayureeb.github.io"
 baseurl: ""
 author: Mayuree Binjolkar
@@ -27,3 +27,4 @@ exclude:
   - LICENSE
   - vendor
   - .github
+  - work

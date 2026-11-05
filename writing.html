@@ -1,32 +1,12 @@
 ---
 layout: default
 permalink: /blog/
+title: Writing
 ---
-
 {% assign p = site.data.profile %}
-
-<section class="section" id="blog">
-  <div class="wrap">
-    <h2 class="section__title">Blog</h2>
-    <p class="writing__lead">I write about post-training, reinforcement learning, and AI alignment.</p>
-    {% if p.substack_url or p.medium_url %}
-    <div class="writing__links">
-      {% if p.substack_url %}<a class="btn btn--ghost" href="{{ p.substack_url }}" target="_blank" rel="noopener">Subscribe on Substack ↗</a>{% endif %}
-      {% if p.medium_url %}<a class="btn btn--ghost" href="{{ p.medium_url }}" target="_blank" rel="noopener">Read on Medium ↗</a>{% endif %}
-    </div>
-    {% endif %}
-    {% if site.posts.size > 0 %}
-    <ul class="posts">
-      {% for post in site.posts %}
-      <li class="post">
-        <p class="post__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></p>
-        {% if post.excerpt %}<p class="post__blurb">{{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}</p>{% endif %}
-        <p class="post__meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-      </li>
-      {% endfor %}
-    </ul>
-    {% else %}
-    <p class="post__meta">Posts coming soon.</p>
-    {% endif %}
-  </div>
-</section>
+<section class="section" id="blog"><div class="wrap wrap--narrow">
+  <h1 class="postfull__title">Writing</h1>
+  <p class="writing__lead">Notes on reinforcement learning, post-training, and how we evaluate AI systems.</p>
+  <div class="writing__links"><a class="text-link" href="{{ p.substack_url }}">Read on Substack</a></div>
+  {% if site.posts.size > 0 %}<ul class="posts">{% for post in site.posts %}<li class="post"><p class="post__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></p>{% if post.excerpt %}<p class="post__blurb">{{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}</p>{% endif %}<p class="post__meta">{{ post.date | date: "%b %-d, %Y" }}</p></li>{% endfor %}</ul>{% else %}<p class="post__meta">My current essays are on Substack. Longer research notes will also appear here.</p>{% endif %}
+</div></section>

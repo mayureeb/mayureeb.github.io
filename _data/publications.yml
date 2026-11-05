@@ -1,61 +1,77 @@
-# Selected. Led by RL / decision-making / alignment-relevant work.
-# `short` = venue badge text; `tint` = blue|teal|amber|slate. Add `image:` for a real figure.
+- title: Where Does Neural Ocean Emulator Error Live? A Depth-Resolved Decomposition
+  authors: Manjaree Binjolkar and Mayuree Binjolkar
+  venue: FMTS Workshop · NeurIPS
+  year: 2026
+  type: Workshop
+  status: Accepted
 
-- authors: "Mayuree Binjolkar, Yuanjie Tu"
-  title: "Adaptive Decision-Making in Human-AI Teaming for Dynamic Driving Environments"
-  description: "How humans and AI share and adapt decisions in fast-changing environments — a human-AI alignment problem."
-  venue: "INFORMS Annual Meeting"
+- title: The functional capabilities of young drivers and implications for fitness-to-drive
+  authors: Mayuree Binjolkar et al.
+  venue: Transportation Research Part F
   year: 2024
-  short: "INFORMS · 2024"
-  tint: blue
+  type: Journal
+  url: https://doi.org/10.1016/j.trf.2024.03.018
 
-- authors: "Mayuree Binjolkar, Sami Park, Semin Kim"
-  title: "Explainability as a Path to Foster Trust in Autonomous Driving Decision-Making"
-  description: "Treats model explainability as a route to trustworthy, aligned decision-making."
-  venue: "Inference and Decision Making for Autonomous Vehicles Workshop, Robotics: Science and Systems"
+- title: Driving characteristics of young adults prior to and following concussion
+  authors: Kristina E. Patrick, Emily Kroshus, Linda Ng Boyle, Jin Wang, Mayuree Binjolkar, Beth E. Ebel, and Frederick P. Rivara
+  venue: Traffic Injury Prevention
+  year: 2024
+  type: Journal
+  url: https://doi.org/10.1080/15389588.2023.2250493
+
+- title: Adaptive Decision-Making in Human–AI Teaming for Dynamic Driving Environments
+  authors: Mayuree Binjolkar and Yuanjie Tu
+  venue: INFORMS Annual Meeting
+  year: 2024
+  type: Presentation
+
+- title: "Optimizing Energy Consumption in AI Training: A Reinforcement Learning Approach"
+  authors: V. Saraiya and Mayuree Binjolkar
+  venue: INFORMS Annual Meeting
+  year: 2024
+  type: Presentation
+
+- title: Enhancing electric vehicle charging demand prediction with graph neural networks
+  authors: Yuanjie Tu and Mayuree Binjolkar
+  venue: INFORMS Annual Meeting
+  year: 2024
+  type: Presentation
+
+- title: Cognitive Impairment and Driving Skills in Youth After Concussion
+  authors: Frederick P. Rivara, Beth E. Ebel, Mayuree Binjolkar, Jin Wang, Amelia Hanron, Emily Kroshus, Linda Ng Boyle, and Kristina E. Patrick
+  venue: Journal of Neurotrauma
   year: 2023
-  short: "RSS · 2023"
-  tint: amber
+  type: Journal
+  url: https://doi.org/10.1089/neu.2022.0308
 
-- authors: "Mayuree Binjolkar, Linda Ng Boyle"
-  title: "Using Inverse Reinforcement Learning to Predict the Impact of Distraction on Future Driver Performance"
-  description: "Inverse RL to recover decision policies and predict behavior under distraction."
-  venue: "Joint Statistical Meeting (JSM)"
+- title: Explainability as a Path to Foster Trust in Autonomous Driving Decision-Making
+  authors: Mayuree Binjolkar, Sami Park, and Semin Kim
+  venue: Inference and Decision Making for Autonomous Vehicles Workshop · Robotics Science and Systems
+  year: 2023
+  type: Workshop
+
+- title: "Capturing Driver Status Using Naturalistic Driving Study Data: Implications for Assessing Health and Safety"
+  authors: Mayuree Binjolkar and Linda Ng Boyle
+  venue: Proceedings of the Human Factors and Ergonomics Society Annual Meeting
+  year: 2022
+  type: Proceedings
+  url: https://doi.org/10.1177/1071181322661523
+
+- title: Augmenting Driver Decision-Making Using Meta-Inverse Reinforcement Learning
+  authors: Mayuree Binjolkar and Y. Sosnovskaya
+  venue: Women in Machine Learning · NeurIPS
+  year: 2022
+  type: Poster
+
+- title: Using Inverse Reinforcement Learning to Predict the Impact of Distraction on Future Driver Performance
+  authors: Mayuree Binjolkar and Linda Ng Boyle
+  venue: Joint Statistical Meeting
   year: 2020
-  short: "JSM · 2020"
-  tint: blue
+  type: Presentation
 
-- authors: "Mayuree Binjolkar, Kristina E. Patrick, Emily Kroshus, Linda Ng Boyle, Jin Wang, Beth Ebel, Frederick P. Rivara"
-  title: "The Implication of Young Drivers' Functional Capabilities on Fitness to Drive"
-  description: "How functional and cognitive capabilities relate to a driver's fitness to drive."
-  venue: "Transportation Research – Part F"
-  year: 2024
-  short: "TR–F · 2024"
-  tint: slate
-  url: "https://www.sciencedirect.com/science/article/abs/pii/S1369847824000639"
-
-- authors: "Mayuree Binjolkar, Linda Ng Boyle"
-  title: "Capturing Driver Status Using Naturalistic Driving Study Data: Implications for Assessing Health and Safety"
-  description: "Infers driver health and status from large-scale naturalistic driving data."
-  venue: "Proceedings of the Human Factors and Ergonomics Society Annual Meeting"
-  year: 2022
-  short: "HFES · 2022"
-  tint: slate
-
-- authors: "Kristina E. Patrick, Emily Kroshus, Linda Ng Boyle, Jin Wang, Mayuree Binjolkar, Beth Ebel, Frederick P. Rivara"
-  title: "Characteristics of Young Adults Prior to Sustaining Concussion"
-  description: "Characterizes young adults before concussion to establish baseline risk factors."
-  venue: "Traffic Injury Prevention"
-  year: 2023
-  short: "TIP · 2023"
-  tint: teal
-  url: "https://www.tandfonline.com/doi/full/10.1080/15389588.2023.2250493"
-
-- authors: "Frederick P. Rivara, Beth Ebel, Mayuree Binjolkar, Amelia Hanron, Emily Kroshus, Linda Boyle, Kristina Patrick"
-  title: "Cognitive Impairment and Driving Skills in Youth After Concussion"
-  description: "Measures how concussion impairs the cognition that safe driving depends on."
-  venue: "Journal of Neurotrauma"
-  year: 2022
-  short: "J. Neurotrauma · 2022"
-  tint: teal
-  url: "https://www.liebertpub.com/doi/full/10.1089/neu.2022.0308"
+- title: "Viruses, Visualization, and Validation: Interactive Mining of COVID-19 Literature"
+  authors: V. Mittal, N. Garg, Y. Wagenmans, Mayuree Binjolkar, et al.
+  venue: ISMB
+  year: 2020
+  type: Oral presentation
+  status: Abstract accepted

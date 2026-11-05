@@ -1,26 +1,28 @@
 # mayureeb.github.io
 
-Personal site for Mayuree Binjolkar — built with Jekyll, deployed on GitHub Pages.
+Mayuree Binjolkar’s research portfolio, built with Jekyll and deployed on GitHub Pages.
 
 ## Editing content
 
-All content lives in `_data/*.yml` — no need to touch the markup:
+- `_data/profile.yml`: introduction, photo, CV, and contact links.
+- `_data/research.yml`: selected research, submission status, methods, and findings.
+- `_data/experience.yml`: role descriptions and experience.
+- `_data/publications.yml`: additional publications and presentations.
+- `_data/projects.yml`: public code repositories.
 
-| File | What it controls |
-|------|------------------|
-| `_data/profile.yml` | Name, role, intro, contact links, photo. Add `linkedin_url`, `scholar_url`, or `resume_url` to switch those buttons on. |
-| `_data/projects.yml` | Project grid cards. `category` sets the color + filter; add a `url` to link to a repo. |
-| `_data/experience.yml` | Work / research timeline. |
-| `_data/education.yml` | Degrees. |
-| `_data/skills.yml` | Skill chips, grouped. |
-| `_data/publications.yml` | Publications & talks. |
+Main page: `index.html`. Shared layout: `_layouts/default.html`. Styles and interaction: `assets/css/main.css` and `assets/js/main.js`. CV: `assets/files/Mayuree_Binjolkar_CV.pdf`.
 
-Layout: `_layouts/default.html` · Page: `index.html` · Styles: `assets/css/main.css` · JS: `assets/js/main.js`.
+Research filters and mobile navigation are progressively enhanced. All research remains accessible without JavaScript. Each project’s methods and findings use a native disclosure.
 
 ## Run locally
 
 ```bash
 bundle install
 bundle exec jekyll serve
-# → http://127.0.0.1:4000
 ```
+
+Open `http://127.0.0.1:4000`. GitHub Pages builds the same Jekyll source after changes to `master`.
+
+## Writing
+
+Add posts to `_posts` using the existing post layout. The `/blog/` archive links to Substack and lists published posts. The post layout supports MathJax, code blocks, figures, and tables.

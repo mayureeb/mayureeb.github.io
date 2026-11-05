@@ -1,0 +1,53 @@
+- title: Decision Value of Human Models Under Certified Policy Families and Independent Refitting
+  area: Adaptation
+  status: Submitted
+  venue: ACM/IEEE International Conference on Human-Robot Interaction (HRI) 2027
+  summary: A controlled vehicle-crossing study separating the value of human-driver information from the physical effects of actions used to gather it.
+  result: Information improved decisions across eight independent refits, but the complete probing strategy underperformed no probing.
+  detail: Exact reachability certificates constrained policy choices. Matched controls and 496 state–controller comparisons identified decision improvements that persisted or reversed after retraining.
+  tags: [Policy adaptation, Human–AI interaction, Independent refitting]
+
+- title: Evaluating Physical Probes for Task Decisions under Hidden Dynamics
+  area: Physical AI
+  status: Accepted
+  venue: PhysWorldAI Workshop · NeurIPS 2026
+  summary: A MuJoCo/MJX and JAX protocol separating sensing, state-estimation, and planning failures under randomized physical dynamics.
+  result: Approximately 30% task completion with estimated state versus 100% with true state located the main failure before planning.
+  detail: Independently seeded 2,048-world studies and 35 probe waveforms tested how physical observations support downstream task decisions.
+  tags: [MuJoCo/MJX, JAX, State estimation]
+
+- title: Learning Longitudinal Control Decisions for Autonomous Driving Under Conflicting Collision Risks
+  area: Physical AI
+  status: Accepted
+  venue: UrbanState Workshop · WACV 2027
+  summary: Learned visual action values from camera and ego-motion histories in CARLA, comparing direct learning with survival-coupled objectives.
+  result: Contact fell from 78.75% with constant-speed control to 33.50%; progress rose from 4.95 m to 14.83 m when contact runs were scored as zero.
+  detail: Experiments covered 5,880 simulation branches and 242 training fits. Controlled comparisons showed that better survival prediction did not improve driving outcomes over direct learning.
+  tags: [Visual action values, CARLA, Decision evaluation]
+
+- title: "Same Threshold, Different Guard: Temporal Force Measurement in Simulated Manipulation"
+  area: Physical AI
+  status: Submitted
+  venue: IEEE International Conference on Robotics and Automation (ICRA) 2027
+  summary: Controlled manipulation experiments in Bullet, MuJoCo, and PhysX isolate how force-measurement windows affect execution.
+  result: A prespecified 10 ms guard average increased retrieval from 0/128 to 99/128 in fresh Bullet worlds and from 77/128 to 121/128 in a matched PhysX panel.
+  detail: Dynamics, ordinary feedback, and guard response were held fixed. Sensitivity studies examined timestep, force threshold, grip strength, and check timing. The evaluation is restricted to simulation.
+  tags: [Robotic manipulation, Contact dynamics, Reproducibility]
+
+- title: Answer-Controlled Probing of Spatial Information in Latent Visual Reasoning
+  area: Reasoning
+  status: Accepted
+  venue: Latent Visual Reasoning Workshop · WACV 2027
+  summary: Spatial representation probes across 200 scene pairs using answer-preserving edits, pre-answer representations, and coordinate probes.
+  result: Internal spatial-relation predictions reached 94.24% accuracy versus 60.40% for the strongest answer/confidence control.
+  detail: Prompt-state and visual-encoder baselines limited evidence that internal reasoning caused the advantage. Experiments used frozen LatenRn-3B-RL representations.
+  tags: [Representation probing, Spatial reasoning, Controlled evaluation]
+
+- title: Auditing the Monitorability of Reasoning Models Under Quantization and Thinking Budgets
+  area: Reasoning
+  status: Workshop research
+  venue: Efficient Reasoning Workshop · COLM 2026
+  summary: Audited reasoning-model faithfulness, safety, and monitorability across weight precision and reasoning-token limits.
+  result: Built an evaluation harness over 9,840 generations with two LLM judges, blind human adjudication, and statistical analysis.
+  detail: Multi-precision serving with vLLM and llama.cpp covered BF16, INT8, INT4-AWQ, and 2-bit GGUF, with controlled reasoning-token limits and bootstrap/regression analysis.
+  tags: [Evaluation harnesses, Quantization, Reasoning models]
