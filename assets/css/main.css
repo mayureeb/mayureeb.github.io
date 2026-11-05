@@ -177,6 +177,7 @@ img { max-width: 100%; display: block; }
 .research-question { color: var(--ink); font-size: 13px; margin-bottom: 8px; }
 .research-preview .research-venue { font-size: 10px; margin: 14px 0 7px; }
 .project-read { font-size: 12px; }
+.research-links { display: flex; flex-wrap: wrap; gap: 8px 22px; }
 .research-page { padding: 42px 0 65px; }
 .back-link { font-size: 12px; }
 .research-page__header { margin: 35px 0 25px; }

@@ -9,7 +9,7 @@ title: Research
   <div class="research-list" id="research-list">{% for project in site.data.research %}{% assign teaser = project.figure_teaser_file | default: project.figure_file %}
     <article class="research-item research-preview" data-area="{{ project.area }}">
       <div class="direction-figure"><img src="{{ '/assets/figures/' | append: teaser | relative_url }}?v={{ site.time | date: '%s' }}" alt="{{ project.figure_teaser_alt | default: project.figure_alt }}" loading="lazy"></div>
-      <div><h2><a href="{{ '/research/' | append: project.slug | append: '/' | relative_url }}">{{ project.title }}</a></h2><p class="research-summary">{{ project.summary }}</p><p class="research-venue">{{ project.venue }} <span class="status{% if project.status == 'Accepted' %} status--accepted{% endif %}">{{ project.status }}</span></p><a class="project-read" href="{{ '/research/' | append: project.slug | append: '/' | relative_url }}">Project overview →</a></div>
+      <div><h2><a href="{{ '/research/' | append: project.slug | append: '/' | relative_url }}">{{ project.title }}</a></h2><p class="research-summary">{{ project.summary }}</p><p class="research-venue">{{ project.venue }} <span class="status{% if project.status == 'Accepted' or project.status == 'Presented' %} status--accepted{% endif %}">{{ project.status }}</span></p><div class="research-links">{% if project.openreview_url %}<a class="project-read" href="{{ project.openreview_url }}">OpenReview ↗</a>{% endif %}<a class="project-read" href="{{ '/research/' | append: project.slug | append: '/' | relative_url }}">Project overview →</a></div></div>
     </article>
   {% endfor %}</div>
 </div></section>

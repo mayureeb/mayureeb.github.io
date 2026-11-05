@@ -25,8 +25,8 @@ layout: default
         <h3><a href="{{ '/research/' | append: project.slug | append: '/' | relative_url }}">{{ project.title }}</a></h3>
         <p class="research-summary">{{ project.summary }}</p>
         <p class="home-research-finding">{{ project.home_finding }}</p>
-        <p class="research-venue">{{ project.venue }} <span class="status{% if project.status == 'Accepted' %} status--accepted{% endif %}">{{ project.status }}</span></p>
-        <a class="project-read" href="{{ '/research/' | append: project.slug | append: '/' | relative_url }}">Methods and results →</a>
+        <p class="research-venue">{{ project.venue }} <span class="status{% if project.status == 'Accepted' or project.status == 'Presented' %} status--accepted{% endif %}">{{ project.status }}</span></p>
+        <div class="research-links">{% if project.openreview_url %}<a class="project-read" href="{{ project.openreview_url }}">OpenReview ↗</a>{% endif %}<a class="project-read" href="{{ '/research/' | append: project.slug | append: '/' | relative_url }}">Methods and results →</a></div>
       </div>
     </article>
     {% endfor %}

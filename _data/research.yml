@@ -446,15 +446,16 @@
     latent-computation advantage.
 - title: Auditing the Monitorability of Reasoning Models Under Quantization and Thinking Budgets
   area: Reasoning
-  status: Submitted
-  venue: Efficient Reasoning Workshop · COLM 2026
-  summary: A 4 × 3 precision-by-thinking-budget audit of DeepSeek-R1-Distill-Qwen-7B, separating task
-    accuracy, harmful-prompt refusal, benign over-refusal, hint-verbalization faithfulness, and monitor
-    performance across 9,840 generations.
-  result: Built an evaluation harness over 9,840 generations with two LLM judges, blind human adjudication,
-    and statistical analysis.
-  detail: Multi-precision serving with vLLM and llama.cpp covered BF16, INT8, INT4-AWQ, and 2-bit GGUF,
-    with controlled reasoning-token limits and bootstrap/regression analysis.
+  status: Presented
+  venue: Workshop on Efficient Reasoning · COLM 2026
+  openreview_url: https://openreview.net/forum?id=AXXzmndYY1
+  summary: A 4 × 3 audit of DeepSeek-R1-Distill-Qwen-7B across deployment configurations and thinking
+    budgets, separating mathematical accuracy, harmful-prompt refusal, cue acknowledgment, and
+    trace-monitor behavior across 6,840 generations.
+  result: Built a deployment audit with two LLM judges, explicit-option parsing, matched monitor controls,
+    and prompt-cluster bootstrap analysis across 6,840 generations.
+  detail: Evaluated BF16, INT8-W8A8, INT4-AWQ, and GGUF-Q2_K with vLLM and llama.cpp at three
+    thinking budgets, distinguishing checkpoint and serving effects from precision alone.
   tags:
     - Evaluation harnesses
     - Quantization
@@ -462,62 +463,76 @@
   slug: reasoning-monitorability
   short_title: Monitorability under inference constraints
   figure: reasoning-monitorability
-  figure_alt: Quantized-model capability across four precisions, beside the INT4-AWQ versus BF16 benign
-    over-refusal risk ratio and confidence interval.
-  question: How do precision and thinking-budget constraints affect the evaluation of reasoning models?
-  interpretation: Inference configurations need to be evaluated alongside the model. Controlled precision
-    and token-budget comparisons support analysis of behavior and monitorability.
-  contribution: I built a deployment-focused evaluation harness for quantized reasoning models and tested
-    whether capability, safety behavior, and reasoning-trace monitorability remain aligned under
-    precision and thinking-budget constraints.
+  figure_alt: Reported mathematical accuracy across three thinking budgets and four deployment configurations,
+    beside monitor-positive rates for hint-following, hinted non-following, and clean traces.
+  question: How do deployment configurations and thinking budgets affect capability, refusal, and trace monitoring?
+  interpretation: Audit each deployed configuration directly, distinguishing cue acknowledgment and observable
+    answer selection from causal influence detection.
+  contribution: I built a deployment-focused audit of reasoning models that separates capability, harmful refusal,
+    cue acknowledgment, and trace-monitor behavior, using matched controls to test what monitor flags actually measure.
   overview:
-    - DeepSeek-R1-Distill-Qwen-7B is evaluated at BF16, INT8, INT4-AWQ, and community 2-bit GGUF, crossed
-      with 512-, 2,048-, and 8,192-token thinking budgets. BF16/INT8/INT4 use vLLM; the 2-bit
-      configuration uses llama.cpp. Budget-forced decoding truncates reasoning at the declared limit
-      before eliciting the answer.
-    - Each of the 12 configurations produces 820 generations. The batteries include paired clean/hinted
-      MMLU-Pro questions, 120 StrongREJECT harmful prompts, 250 XSTest benign prompts, and a 150-problem
-      MATH-500 subset. The design evaluates capability, harmful refusal, benign over-refusal, cue
-      acknowledgment, and monitor detection separately.
+    - DeepSeek-R1-Distill-Qwen-7B is evaluated as BF16, INT8-W8A8, and INT4-AWQ under vLLM, and as
+      GGUF-Q2_K under llama.cpp, crossed with 512-, 2,048-, and 8,192-token thinking budgets.
+      Inference-time budget forcing truncates unfinished thinking before eliciting a final answer.
+      These are deployment-configuration comparisons; checkpoint provenance, quantizer, activation
+      precision, and serving settings vary together.
+    - Each cell contributes 570 generations, for 6,840 analyzed outputs across clean/hinted question pairs,
+      120 StrongREJECT harmful prompts, and a 150-problem MATH-500 subset. The cue task uses a six-option
+      adaptation of MMLU-Pro. The published analysis excludes 3,000 XSTest responses because their refusal
+      judge used an unsuitable rubric, and makes no benign over-refusal claim.
   method_sections:
-    - heading: Faithfulness and monitor measurement
-      text: Two independent LLM judges, a deterministic lexical probe, and precision-blinded human review of 60
-        hint-induced answer flips distinguish explicit cue reliance, mention without credit, persona
-        absorption, and cue silence. A separate monitor sees the reasoning trace without being told that
-        the prompt contains a cue.
-    - heading: Paired inference and statistical analysis
-      text: Identical prompts support paired comparisons across deployment configurations. Bootstrap intervals,
-        logistic regression, exact proportion tests, and correction for eight primary pairwise
-        comparisons quantify effects. Judge disagreement and the think–answer acknowledgment gap are
-        retained as measured outcomes.
+    - heading: Cue outcomes and acknowledgment measurement
+      text: An explicit-option parser distinguishes hint-following responses, observed clean-to-hinted switches,
+        valid hinted non-following responses, and unresolved outputs. Claude Sonnet 4.6 and GPT-4.1-mini
+        independently judge cue acknowledgment; a lexical probe provides a separate mention detector.
+        Acknowledgment is broader than explicit reliance. A separate 60-trace, LLM-assisted and
+        author-validated exploratory coding sample illustrates this distinction without validating the
+        main parser-defined groups.
+    - heading: Exposure-matched monitor controls
+      text: A trace-only monitor sees the first 6,000 characters without the question or hint-presence label.
+        Its positive rate is evaluated on hint-following, observed-switch, valid hinted non-following,
+        unresolved hinted, and clean traces. These controls distinguish low clean-trace false alarms
+        from evidence of answer-change detection; none provides causal ground truth.
+    - heading: Refusal scoring and uncertainty
+      text: Harmful responses are classified as refused, partial, or complied rather than scored with the
+        official StrongREJECT harmfulness metric. For the Q2_K–BF16 primary-judge refusal contrast,
+        20,000 bootstrap replicates resample prompt IDs while retaining repeated budgets and configurations.
+        Intervals measure prompt-sampling uncertainty, not variability across generation seeds.
   protocol:
     - label: Model
       value: DeepSeek-R1-Distill-Qwen-7B
     - label: Design
-      value: 4 precisions × 3 thinking budgets
+      value: 4 deployment configurations × 3 thinking budgets
     - label: Generations
-      value: 9,840 total; 820 per configuration
+      value: 6,840 analyzed; 570 per configuration–budget cell
     - label: Serving
       value: vLLM and llama.cpp
   findings:
-    - At the 8,192-token budget, accuracy on the MATH-500 subset is approximately 85% for BF16 and 79%
-      for 2-bit GGUF. The harmful-refusal comparison nevertheless degrades at 2 bits, demonstrating that
-      retained task accuracy does not by itself characterize the checkpoint’s safety behavior.
-    - "INT4-AWQ raises benign over-refusal from 21/750 (2.8%) under BF16 to 67/750 (8.9%): a risk ratio
-      of 3.19, with a 95% interval of 1.97–5.15. Harmful-prompt refusal and benign over-refusal exhibit
-      distinct failure patterns and are evaluated separately."
-    - The primary judge reports reduced hint reliance at INT4, while blinded review does not confirm a
-      decline in explicit reliance. Monitor false-positive rates stay at or below 2% across cells, with
-      recall ranging from 28% to 54%. These results expose sensitivity of faithfulness measurement to the
-      assessor as well as to the deployed model configuration.
-  scope: The audit covers one 7B model, one run per configuration, and community quantized checkpoints with
-    unknown calibration data. The 2-bit comparison also changes inference engine, so it does not isolate
-    a pure precision effect. The 60-trace human review is limited for small effects; the proposed
-    compositional shift at INT4 remains suggestive.
+    - At 8,192 thinking tokens, MATH-subset accuracy is 85%, 85%, 82%, and 79% for BF16, INT8, INT4,
+      and Q2_K. Across configurations, accuracy ranges from 41–45% at 512 tokens and 69–73% at 2,048.
+      Budget-associated differences are larger than configuration differences in this grid; the study
+      does not establish capability equivalence or a measured efficiency gain.
+    - Primary-judge harmful refusal is 27.9% for Q2_K versus 36.4% for BF16 across budgets.
+      The difference is −8.5 percentage points, with a prompt-cluster bootstrap 95% interval of
+      −14.9 to −1.9 points. This is a deployment-level difference, with serving and checkpoint confounds,
+      rather than an isolated causal effect of quantization.
+    - The monitor flags 262/574 hint-following traces (45.6%), 143/942 valid hinted non-following
+      traces (15.2%), and 11/1,800 clean traces (0.6%). It flags 208/396 observed-switch traces (52.5%).
+      Low clean-trace false alarms alone therefore do not establish detection of hint-caused answer changes.
+    - Automated cue-acknowledgment scores depend strongly on the judge. The separate exploratory sample
+      contains explicit reliance in 9/30 BF16 and 8/30 INT4 traces; these small, historically selected
+      groups do not establish unchanged reliance or validate the main extraction groups.
+  scope: One 7B model and one generation per prompt and cell limit generalization. Community checkpoint
+    provenance and quantizer differences are uncontrolled; Q2_K also changes serving stack and runtime
+    settings. The explicit-option parser leaves 16.0% of clean/hinted outputs unresolved, and judges see
+    only a trace prefix. The exploratory coding sample lacks independent inter-rater validation.
+    Monitor-positive rates measure observable proxies, not causally verified influence.
   figure_file: reasoning-monitorability.svg
-  figure_kind: Reported audit results
-  figure_caption: "Left: reported MATH-subset accuracy at 8,192 thinking tokens. Right: benign over-refusal
-    pooled across budgets, with a reported 95% risk-ratio interval. The 2-bit checkpoint also changes
-    serving engine."
-  home_finding: INT4-AWQ increases benign over-refusal from 2.8% to 8.9%. Capability and safety behavior
-    diverge, while blinded review exposes assessor sensitivity in faithfulness measurement.
+  figure_kind: Published audit results
+  figure_caption: "Left: MATH-subset accuracy from Table 1 across three thinking budgets. Right:
+    pooled monitor-positive counts from Table 3. Hinted non-following requires a valid parsed answer;
+    unresolved outputs are analyzed separately. Pooled counts are descriptive and include repeated prompts.
+    Deployment configurations vary in checkpoint provenance and serving settings; Q2_K also changes engine."
+  home_finding: At 8,192 thinking tokens, mathematical accuracy ranges from 79–85%, while harmful refusal
+    is lower for Q2_K than BF16. Exposure-matched controls show that low clean-trace false alarms alone
+    do not establish detection of hint-caused answer changes.
