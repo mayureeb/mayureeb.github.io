@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" role="img" aria-label="Human models, certified policy choices, and independent refitting">
 <title>Human models, certified policy choices, and independent refitting</title>
-<defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7" fill="none" stroke="#7a94a6" stroke-width="1.2"/></marker></defs>
-<rect width="560" height="300" fill="#f4f7f9"/>
-<g font-family="Arial,sans-serif" fill="#314f65" font-size="14">
-<rect x="24" y="54" width="150" height="62" rx="4" fill="#fff" stroke="#bdceda"/>
-<text x="99.0" y="81.0" text-anchor="middle" font-size="14" fill="#314f65">Human</text>
-<text x="99.0" y="99.0" text-anchor="middle" font-size="14" fill="#314f65">model</text>
-<rect x="205" y="54" width="150" height="62" rx="4" fill="#e1ecf3" stroke="#bdceda"/>
-<text x="280.0" y="81.0" text-anchor="middle" font-size="14" fill="#314f65">Certified</text>
-<text x="280.0" y="99.0" text-anchor="middle" font-size="14" fill="#314f65">policy family</text>
-<rect x="386" y="54" width="150" height="62" rx="4" fill="#fff" stroke="#bdceda"/>
-<text x="461.0" y="81.0" text-anchor="middle" font-size="14" fill="#314f65">Decision</text>
-<text x="461.0" y="99.0" text-anchor="middle" font-size="14" fill="#314f65">value</text>
-<path d="M174 85H198" fill="none" stroke="#7a94a6" stroke-width="1.4" marker-end="url(#arrow)"/>
-<path d="M355 85H379" fill="none" stroke="#7a94a6" stroke-width="1.4" marker-end="url(#arrow)"/>
-<rect x="205" y="164" width="150" height="50" rx="4" fill="#fff" stroke="#bdceda"/>
-<text x="280.0" y="194.0" text-anchor="middle" font-size="14" fill="#314f65">Independent refits</text>
-<path d="M280 164V124" fill="none" stroke="#7a94a6" stroke-width="1.4" marker-end="url(#arrow)"/>
-<text x="280" y="260" text-anchor="middle" font-size="14" fill="#314f65">Does the decision improvement survive retraining?</text>
+<defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#b75e43"/></marker></defs>
+<rect width="560" height="300" fill="#fff7f2"/>
+<g font-family="Inter,ui-sans-serif,system-ui,sans-serif" fill="#38291f" font-size="14">
+<rect x="24" y="54" width="150" height="62" rx="8" fill="#ffffff" stroke="#ebd6ca"/>
+<text x="99.0" y="81.0" text-anchor="middle" font-size="14" font-weight="500" fill="#38291f">Human</text>
+<text x="99.0" y="99.0" text-anchor="middle" font-size="14" font-weight="500" fill="#38291f">model</text>
+<rect x="205" y="54" width="150" height="62" rx="8" fill="#ff947c" stroke="#ff947c"/>
+<text x="280.0" y="81.0" text-anchor="middle" font-size="14" font-weight="500" fill="#38291f">Certified</text>
+<text x="280.0" y="99.0" text-anchor="middle" font-size="14" font-weight="500" fill="#38291f">policy family</text>
+<rect x="386" y="54" width="150" height="62" rx="8" fill="#ffffff" stroke="#ebd6ca"/>
+<text x="461.0" y="81.0" text-anchor="middle" font-size="14" font-weight="500" fill="#38291f">Decision</text>
+<text x="461.0" y="99.0" text-anchor="middle" font-size="14" font-weight="500" fill="#38291f">value</text>
+<path d="M174 85H198" fill="none" stroke="#b75e43" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M355 85H379" fill="none" stroke="#b75e43" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="205" y="164" width="150" height="50" rx="8" fill="#ffffff" stroke="#ebd6ca"/>
+<text x="280.0" y="194.0" text-anchor="middle" font-size="14" font-weight="500" fill="#38291f">Independent refits</text>
+<path d="M280 164V124" fill="none" stroke="#b75e43" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="280" y="260" text-anchor="middle" font-size="14" font-weight="400" fill="#38291f">Does the decision improvement survive retraining?</text>
 </g></svg>

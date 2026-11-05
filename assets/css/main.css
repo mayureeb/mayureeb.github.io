@@ -1,7 +1,7 @@
 :root {
   --ink: #242a30;
   --muted: #5c6670;
-  --link: #205e91;
+  --link: #5540b8;
   --line: #e2e6e9;
   --sans: 'Inter', Arial, sans-serif;
 }
@@ -43,8 +43,8 @@ img { max-width: 100%; display: block; }
 .filter-bar { display: none; align-items: center; gap: 7px; margin: -5px 0 5px; }
 .js .filter-bar { display: flex; }
 .filter { border: 1px solid transparent; border-radius: 3px; background: transparent; font-size: 11px; padding: 7px 11px; color: var(--muted); cursor: pointer; min-height: 37px; }
-.filter:hover { color: var(--link); background: #f3f6f8; }
-.filter.is-active { color: var(--link); background: #edf3f8; border-color: #d8e4ed; }
+.filter:hover { color: var(--link); background: #f6f3fc; }
+.filter.is-active { color: var(--link); background: #f1edfb; border-color: #ded5f3; }
 .filter-count { margin-left: auto; font-size: 10px; color: var(--muted); }
 .research-item { border-bottom: 1px solid var(--line); padding: 24px 0; }
 .research-item:last-child { border-bottom: 0; padding-bottom: 0; }
@@ -52,7 +52,7 @@ img { max-width: 100%; display: block; }
 .research-item h3 { font-size: 16px; font-weight: 600; letter-spacing: -.01em; }
 .research-venue { font-size: 12px; color: var(--muted); margin: 7px 0 10px; }
 .status { display: inline-block; padding: 0 6px; margin-left: 6px; border: 1px solid #dddfe4; border-radius: 3px; color: #626975; font-size: 10px; line-height: 1.8; }
-.status--accepted { color: #326246; border-color: #d4e1d8; }
+.status--accepted { color: #08745f; border-color: #bcded3; }
 .research-summary { font-size: 13px; line-height: 1.85; color: #414c56; }
 .publication { display: grid; grid-template-columns: 55px 1fr; gap: 24px; padding: 15px 0; }
 .publication__year { color: var(--muted); font-size: 12px; padding-top: 1px; }
@@ -156,7 +156,7 @@ img { max-width: 100%; display: block; }
 .research-direction { display: grid; grid-template-columns: 290px 1fr; gap: 42px; align-items: center; padding: 30px 0; }
 .research-direction + .research-direction { border-top: 1px solid var(--line); }
 .direction-figure { display: block; }
-.direction-figure img { width: 100%; height: auto; border: 1px solid #edf1f4; }
+.direction-figure img { width: 100%; height: auto; border: 1px solid transparent; border-radius: 8px; }
 .research-direction h3 { font-size: 18px; font-weight: 500; letter-spacing: -.02em; margin-bottom: 10px; }
 .research-direction p { font-size: 13px; line-height: 1.9; color: #48545e; }
 .related-work { display: flex; flex-direction: column; gap: 6px; margin-top: 14px; font-size: 12px; }

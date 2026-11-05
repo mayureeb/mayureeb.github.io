@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="560" height="300" viewBox="0 0 560 300" role="img" aria-label="Force measurement over different time windows">
 <title>Force measurement over different time windows</title>
-<defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7" fill="none" stroke="#7a94a6" stroke-width="1.2"/></marker></defs>
-<rect width="560" height="300" fill="#f4f7f9"/>
-<g font-family="Arial,sans-serif" fill="#314f65" font-size="14">
-<text x="40" y="34" text-anchor="start" font-size="13" fill="#314f65">Illustrative force signal</text>
-<path d="M65 56V220H521" fill="none" stroke="#aebfcb"/>
-<path d="M65 114H521" fill="none" stroke="#7d8995" stroke-dasharray="5 5"/>
-<text x="517" y="103" text-anchor="end" font-size="12" fill="#314f65">Fixed threshold</text>
-<path d="M66 190L115 190L160 185L200 191L243 191L250 71L258 190L310 190L350 183L390 190L450 190L519 190" fill="none" stroke="#a9b7c2" stroke-width="2"/>
-<path d="M66 190L160 190Q215 190 235 173Q253 151 274 168Q299 190 335 190H519" fill="none" stroke="#396b91" stroke-width="3"/>
-<text x="35" y="140" text-anchor="middle" font-size="12" fill="#314f65">Force</text>
-<text x="490" y="242" text-anchor="middle" font-size="12" fill="#314f65">Time</text>
-<path d="M83 271H107" stroke="#a9b7c2" stroke-width="2"/><path d="M287 271H311" stroke="#396b91" stroke-width="3"/>
-<text x="118" y="276" text-anchor="start" font-size="12" fill="#314f65">Instantaneous measurement</text>
-<text x="321" y="276" text-anchor="start" font-size="12" fill="#314f65">Windowed measurement</text>
+<defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="#388b75"/></marker></defs>
+<rect width="560" height="300" fill="#effaf6"/>
+<g font-family="Inter,ui-sans-serif,system-ui,sans-serif" fill="#163d35" font-size="14">
+<text x="40" y="34" text-anchor="start" font-size="13" font-weight="400" fill="#163d35">Illustrative force signal</text>
+<path d="M65 56V220H521" fill="none" stroke="#a8c4ba"/>
+<path d="M65 114H521" fill="none" stroke="#65776f" stroke-dasharray="5 5"/>
+<text x="517" y="103" text-anchor="end" font-size="12" font-weight="400" fill="#163d35">Fixed threshold</text>
+<path d="M66 190L115 190L160 185L200 191L243 191L250 71L258 190L310 190L350 183L390 190L450 190L519 190" fill="none" stroke="#de533b" stroke-width="2.5"/>
+<path d="M66 190L160 190Q215 190 235 173Q253 151 274 168Q299 190 335 190H519" fill="none" stroke="#007f6d" stroke-width="3.5"/>
+<text x="35" y="140" text-anchor="middle" font-size="12" font-weight="400" fill="#163d35">Force</text>
+<text x="490" y="242" text-anchor="middle" font-size="12" font-weight="400" fill="#163d35">Time</text>
+<path d="M83 271H107" stroke="#de533b" stroke-width="2.5"/><path d="M287 271H311" stroke="#007f6d" stroke-width="3.5"/>
+<text x="118" y="276" text-anchor="start" font-size="12" font-weight="400" fill="#163d35">Instantaneous measurement</text>
+<text x="321" y="276" text-anchor="start" font-size="12" font-weight="400" fill="#163d35">Windowed measurement</text>
 </g></svg>
