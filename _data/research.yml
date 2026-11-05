@@ -83,6 +83,8 @@
   figure_teaser_file: human-models-teaser.svg
   figure_teaser_alt: Schematic geometry of the synthetic perpendicular crossing, including the autonomous
     and human vehicles and conflict bounds.
+  home_finding: Matched controls show a positive posterior-use gain across eight independent refits, while
+    the complete probing strategy has higher cost than no probing.
 - title: Evaluating Physical Probes for Task Decisions under Hidden Dynamics
   area: Physical AI
   status: Accepted
@@ -173,6 +175,8 @@
     waveforms, and fresh-world test results, reproduced from manuscript Figure 2a–c.
   figure_teaser_file: physical-probes-teaser.png
   figure_teaser_alt: Actual task-selected and D-optimal diagnostic probe waveforms reproduced from the manuscript.
+  home_finding: Estimated-state planning remains near 30% completion versus 100% with true state;
+    task-selected probing does not outperform the strongest fixed controls.
 - title: Learning Longitudinal Control Decisions for Autonomous Driving Under Conflicting Collision Risks
   area: Physical AI
   status: Accepted
@@ -262,6 +266,9 @@
   figure_kind: Reported driving outcomes
   figure_caption: Aggregate CARLA results for 80 combined-scenario test configurations. Progress is scored
     as zero after contact. The direct and survival-coupled outcomes nearly coincide.
+  home_finding: Matched direct and survival-coupled learning achieve 33.75% and 33.50% contact, with 14.81
+    m and 14.83 m contact-zeroed progress. Improved survival prediction does not produce an additional
+    driving benefit.
 - title: "Same Threshold, Different Guard: Temporal Force Measurement in Simulated Manipulation"
   area: Physical AI
   status: Submitted
@@ -350,6 +357,9 @@
   figure_kind: Reported sensitivity analysis
   figure_caption: "Replotted from manuscript Figure 3: the same 128 fresh Bullet worlds at every setting.
     Cell colors encode magnitude; larger force is not a better outcome."
+  home_finding: A prespecified 10 ms average increases retrieval from 0/128 to 99/128 in fresh Bullet
+    worlds and from 77/128 to 121/128 in a matched PhysX panel; force exposure and guard behavior are
+    evaluated separately.
 - title: Answer-Controlled Probing of Spatial Information in Latent Visual Reasoning
   area: Reasoning
   status: Accepted
@@ -431,6 +441,9 @@
   figure_teaser_file: spatial-reasoning-teaser.svg
   figure_teaser_alt: Illustrative spatial scene showing object-coordinate and spatial-relation targets; not
     a dataset image.
+  home_finding: Internal-state relation readouts reach 94.24% accuracy versus 60.40% for the strongest
+    answer/confidence control. Prompt-state and visual-encoder comparisons limit claims of a
+    latent-computation advantage.
 - title: Auditing the Monitorability of Reasoning Models Under Quantization and Thinking Budgets
   area: Reasoning
   status: Submitted
@@ -506,3 +519,5 @@
   figure_caption: "Left: reported MATH-subset accuracy at 8,192 thinking tokens. Right: benign over-refusal
     pooled across budgets, with a reported 95% risk-ratio interval. The 2-bit checkpoint also changes
     serving engine."
+  home_finding: INT4-AWQ increases benign over-refusal from 2.8% to 8.9%. Capability and safety behavior
+    diverge, while blinded review exposes assessor sensitivity in faithfulness measurement.

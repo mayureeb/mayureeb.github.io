@@ -172,8 +172,8 @@ img { max-width: 100%; display: block; }
 .page-intro p { max-width: 770px; font-size: 14px; color: #4e5b65; line-height: 1.9; }
 .research-catalog { padding-top: 15px; }
 .research-preview { display: grid; grid-template-columns: 300px 1fr; gap: 35px; align-items: center; padding: 32px 0; }
-.research-preview h2 { font-size: 19px; font-weight: 500; margin-bottom: 12px; }
-.research-preview h2 a { color: var(--ink); }
+.research-preview :is(h2,h3) { font-size: 19px; font-weight: 500; margin-bottom: 12px; }
+.research-preview :is(h2,h3) a { color: var(--ink); }
 .research-question { color: var(--ink); font-size: 13px; margin-bottom: 8px; }
 .research-preview .research-venue { font-size: 10px; margin: 14px 0 7px; }
 .project-read { font-size: 12px; }
@@ -216,7 +216,7 @@ img { max-width: 100%; display: block; }
   .page-intro p { font-size: 13px; }
   .research-preview { grid-template-columns: 1fr; gap: 20px; padding: 27px 0; }
   .research-preview .direction-figure { max-width: 390px; }
-  .research-preview h2 { font-size: 18px; }
+  .research-preview :is(h2,h3) { font-size: 18px; }
   .research-question { font-size: 12px; }
   .research-page { padding: 27px 0 45px; }
   .research-page__header { margin-top: 27px; }
@@ -232,7 +232,7 @@ img { max-width: 100%; display: block; }
 .research-direction .direction-figure { margin-top: 6px; }
 .research-direction p + p { margin-top: 12px; }
 .related-work { gap: 9px; line-height: 1.65; }
-.research-preview h2 { font-size: 18px; line-height: 1.55; }
+.research-preview :is(h2,h3) { font-size: 18px; line-height: 1.55; }
 .research-keywords { font-size: 11px; color: var(--muted); margin-top: 14px; }
 .project-contribution { font-size: 16px; line-height: 1.85; color: #38434d; }
 .project-nav { display: flex; flex-wrap: wrap; gap: 10px 24px; margin: 27px 0 35px; padding: 13px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: 12px; }
@@ -260,7 +260,7 @@ img { max-width: 100%; display: block; }
  .research-page .research-equation p:first-child { font-size: 17px; }
  .results-table { font-size: 11px; }
  .results-table th, .results-table td { padding: 9px 8px; }
- .research-preview h2 { font-size: 17px; }
+ .research-preview :is(h2,h3) { font-size: 17px; }
 }
 
 .project-figure figcaption span { font-weight: 500; color: #48545e; }
@@ -268,3 +268,5 @@ img { max-width: 100%; display: block; }
 .figure-expand { display: block; cursor: zoom-in; }
 
 .figure-fullsize { display: block; margin-top: 7px; font-size: 11px; }
+
+.home-research-finding { font-size: 12px; line-height: 1.85; color: #48545e; margin-top: 12px; }

@@ -4,7 +4,7 @@ layout: default
 {% assign project = site.data.research | where: "slug", page.project | first %}
 <article class="research-page">
   <div class="wrap wrap--narrow">
-    <a class="back-link" href="{{ '/research/' | relative_url }}">← Research</a>
+    <a class="back-link" href="{{ '/#research' | relative_url }}">← Research</a>
     <header class="research-page__header">
       <p class="research-area">{{ project.area }}</p>
       <h1>{{ project.title }}</h1>
@@ -26,6 +26,6 @@ layout: default
       {% for paragraph in project.findings %}<p>{{ paragraph }}</p>{% endfor %}
     </section>
     <section id="scope"><h2>Scope and interpretation</h2><p>{{ project.scope }}</p></section>
-    <div class="research-page__end"><a class="back-link" href="{{ '/research/' | relative_url }}">← All research projects</a><a class="back-link" href="{{ '/publications/' | relative_url }}">Publications and manuscripts →</a></div>
+    <div class="research-page__end"><a class="back-link" href="{{ '/#research' | relative_url }}">← All research projects</a><a class="back-link" href="{{ '/publications/' | relative_url }}">Publications and manuscripts →</a></div>
   </div>
 </article>

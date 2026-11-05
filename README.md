@@ -4,7 +4,7 @@ Mayuree Binjolkar’s research website, built with Jekyll and deployed on GitHub
 
 ## Structure
 
-- `index.html`: research overview and short introduction.
+- `index.html`: short introduction and all six research projects, with graphics, technical summaries, findings, and links to the full studies.
 - `research.html`: project index and software.
 - `_research/`: individual project pages, rendered with `_layouts/research.html`.
 - `publications.html`: manuscripts, publications, and presentations.
